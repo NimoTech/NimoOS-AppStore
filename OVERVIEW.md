@@ -10,7 +10,7 @@
 
 | 路径 | 用途 |
 |---|---|
-| `Apps/` | 所有应用定义目录,每个子目录是一个独立应用(共约 160 个) |
+| `Apps/` | 所有应用定义目录,每个子目录是一个独立应用(共 161 个;最新新增 `Arize-Phoenix`,agent 监控,Developer 类,主端口 6006) |
 | `category-list.json` | 全局分类列表(Analytics / Media / AI / Network 等 28 个类别) |
 | `featured-apps.json` | 精选应用列表(AppStore 首页 Banner 展示用) |
 | `recommend-list.json` | 推荐应用列表(首页推荐位,目前约 9 个) |
@@ -107,7 +107,7 @@ services:
 }
 ```
 
-> `appfile.json` 是旧版兼容格式;新版 AppManagement 优先读取 `docker-compose.yml` 中的 `x-casaos` 字段。打包时 `appfile.json`、图标、截图等体积较大的素材**均被脚本剔除**,不进入发布 tar 包。
+> `appfile.json` 是旧版兼容格式;新版 AppManagement 优先读取 `docker-compose.yml` 中的 `x-casaos` 字段。打包时 `appfile.json`、图标、截图等体积较大的素材**均被脚本剔除**,不进入发布 tar 包。因此新增应用可以只提供 `docker-compose.yml` + `icon.png` 的最小结构(如 2026-07 新增的 `Apps/Arize-Phoenix/`)。
 
 ---
 
