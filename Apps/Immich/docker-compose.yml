@@ -36,6 +36,9 @@ services:
       DB_PASSWORD: postgres
       DB_USERNAME: postgres
     restart: unless-stopped
+    # ML 容器必须有内存硬上限(2026-07-28 全局 OOM 复盘);≥8G 保证多模型并存。
+    mem_limit: 8g
+    memswap_limit: 8g
     volumes:
       - /DATA/AppData/immich/model-cache:/cache
     healthcheck:
