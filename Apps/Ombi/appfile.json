@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Ombi",
 	"name": "Ombi",
-	"icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Ombi/icon.png",
+	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ombi/icon.png",
 	"tagline": "Friendly media request tool, automatically syncs with your media servers! ",
 	"overview": "Ombi is a self-hosted web application that automatically gives your shared Plex or Emby users the ability to request content by themselves! Ombi can be linked to multiple TV Show and Movie DVR tools to create a seamless end-to-end experience for your users.",
-	"thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Ombi/thumbnail.png",
+	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ombi/thumbnail.png",
 	"screenshots": [
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Ombi/screenshot-1.png",
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Ombi/screenshot-2.png",
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Ombi/screenshot-3.png"
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ombi/screenshot-1.png",
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ombi/screenshot-2.png",
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ombi/screenshot-3.png"
 	],
 	"category": [
 		"Media"

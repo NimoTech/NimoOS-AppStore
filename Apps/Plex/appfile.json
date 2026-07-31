@@ -2,14 +2,14 @@
     "version": "2.0",
     "title": "Plex",
     "name": "plex",
-    "icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Plex/icon.png",
+    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Plex/icon.png",
     "tagline": "The home for all your entertainment.",
     "overview": "Plex organizes video, music and photos from personal media libraries and streams them to smart TVs, streaming boxes and mobile devices. This container is packaged as a standalone Plex Media Server. has always been a top priority. Straightforward design and bulk actions mean getting things done faster.",
-    "thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Plex/thumbnail.png",
+    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Plex/thumbnail.png",
     "screenshots": [
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Plex/screenshot-1.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Plex/screenshot-2.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Plex/screenshot-3.png"
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Plex/screenshot-1.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Plex/screenshot-2.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Plex/screenshot-3.png"
     ],
     "category": [
         "Media"
@@ -26,7 +26,7 @@
         "donate_text": "", 
         "donate_link": ""
     },
-    "support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+    "support": "https://discord.com/invite/8NStGMweZh",
     "website": "https://www.casaos.io",
     "container": {
         "image": "linuxserver/plex:latest",

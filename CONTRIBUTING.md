@@ -125,10 +125,10 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
             description:                    # multiple locales are supported
                 en_US: Syncthing is a continuous file synchronization program. It synchronizes files between two or more computers in real time, safely protected from prying eyes. Your data is your data alone and you deserve to choose where it is stored, whether it is shared with some third party, and how it's transmitted over the internet.
             developer: Syncthing
-            icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Syncthing/icon.png
+            icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Syncthing/icon.png
             tagline:                        # multiple locales are supported
                 en_US: Free, secure, and distributed file synchronisation tool.
-            thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Jellyfin/thumbnail.jpg
+            thumbnail: ""
             title:                          # multiple locales are supported
                 en_US: Syncthing
             tips:

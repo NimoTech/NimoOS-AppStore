@@ -2,14 +2,14 @@
   "version": "2.0",
   "title": "Nextcloud",
   "name": "nextcloud",
-  "icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/icon.png",
+  "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/icon.png",
   "tagline": "The productivity platform that keeps you in control",
   "overview": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
-  "thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/thumbnail.jpg",
+  "thumbnail": "",
   "screenshots": [
-    "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-1.png",
-    "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-2.png",
-    "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Nextcloud/screenshot-3.png"
+    "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-1.png",
+    "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-2.png",
+    "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-3.png"
   ],
   "category": [
     "Cloud"
@@ -26,7 +26,7 @@
     "donate_text": "",
     "donate_link": ""
   },
-  "support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+  "support": "https://discord.com/invite/8NStGMweZh",
   "website": "https://www.casaos.io",
   "container": {
     "image": "nextcloud:latest",

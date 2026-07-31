@@ -2,15 +2,15 @@
 	"version": "2.0",
 	"title": "Bazarr",
 	"name": "Bazarr",
-	"icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Bazarr/icon.png",
+	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/icon.png",
 	"tagline": "Letter generators for Sonarr and Radarr",
 	"overview": "Bazarr is a companion application to Sonarr and Radarr. It can manage and download subtitles based on your requirements. You define your preferences by TV show or movie and Bazarr takes care of everything for you.",
-	"thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Bazarr/thumbnail.png",
+	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/thumbnail.png",
 	"screenshots": [
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Bazarr/screenshot-1.png",
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Bazarr/screenshot-2.png",
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Bazarr/screenshot-3.png",
-	"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Bazarr/screenshot-4.png"
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-1.png",
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-2.png",
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-3.png",
+	"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-4.png"
 	],
 	"category": [
 		"Media"

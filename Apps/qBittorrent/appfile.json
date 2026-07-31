@@ -2,13 +2,11 @@
     "version": "2.0",
     "title": "qBittorrent",
     "name": "qbittorrent",
-    "icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/qBittorrent/icon.png",
+    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/qBittorrent/icon.png",
     "tagline": "Free BitTorrent downloader",
     "overview": "The qBittorrent project aims to provide an open-source software alternative to µTorrent.",
-    "thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/qBittorrent/thumbnail.jpg",
+    "thumbnail": "",
     "screenshots": [
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/qBittorrent/screenshot-1.jpg",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/qBittorrent/screenshot-2.jpg"
     ],
     "category": [
         "Downloader"
@@ -25,7 +23,7 @@
         "donate_text": "", 
         "donate_link": ""
     },
-    "support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+    "support": "https://discord.com/invite/8NStGMweZh",
     "website": "https://www.casaos.io",
     "container": {
         "image": "hotio/qbittorrent:latest",
@@ -149,7 +147,7 @@
     },
     "changelog": {
         "latest_updates": "",
-        "url": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/qBittorrent/changelog.txt"
+        "url": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/qBittorrent/changelog.txt"
     },
     "latest_update_date": "1640592195"
 }

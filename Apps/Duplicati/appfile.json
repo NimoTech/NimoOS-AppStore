@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Duplicati",
 	"name": "duplicati",
-	"icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Duplicati/icon.png",
+	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/icon.png",
 	"tagline": "Store securely encrypted backups in the cloud!",
 	"overview": "Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers.",
-	"thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Duplicati/thumbnail.png",
+	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/thumbnail.png",
 	"screenshots": [
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Duplicati/screenshot-1.png",
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Duplicati/screenshot-2.png",
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Duplicati/screenshot-3.png"
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-1.png",
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-2.png",
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-3.png"
 	],
 	"category": [
 		"Cloud"
@@ -26,7 +26,7 @@
 		"donate_text": "",
 		"donate_link": ""
 	},
-	"support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+	"support": "https://discord.com/invite/8NStGMweZh",
 	"website": "https://www.casaos.io",
 	"container": {
 		"image": "linuxserver/duplicati:latest",

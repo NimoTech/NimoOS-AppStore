@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Emby",
 	"name": "emby",
-	"icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Emby/icon.png",
+	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/icon.png",
 	"tagline": "TAKE YOUR MEDIA ANYWHERE WITH EMBY",
 	"overview": "Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.",
-	"thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Emby/thumbnail.png",
+	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/thumbnail.png",
 	"screenshots": [
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Emby/screenshot-1.png",
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Emby/screenshot-2.png",
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Emby/screenshot-3.png"
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-1.png",
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-2.png",
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-3.png"
 	],
 	"category": [
 		"Media"
@@ -26,7 +26,7 @@
 		"donate_text": "",
 		"donate_link": ""
 	},
-	"support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+	"support": "https://discord.com/invite/8NStGMweZh",
 	"website": "https://www.casaos.io",
 	"container": {
 		"image": "linuxserver/emby:4.7.13",

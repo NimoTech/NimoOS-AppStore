@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Transmission",
 	"name": "transmission",
-	"icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Transmission/icon.png",
+	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Transmission/icon.png",
 	"tagline": "Transmission is a cross-platform BitTorrent client ",
 	"overview": "Transmission is an open source, volunteer-based project. Unlike some BitTorrent clients, Transmission doesn't play games with its users to make money:  Transmission doesn't bundle toolbars, pop-up ads, flash ads, twitter tools, or anything else. It doesn't hold some features back for a payware version. Its source code is available for anyone to review. We don't track our users, and our website and forums have no third-party ads or analytics.",
-	"thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Transmission/thumbnail.png",
+	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Transmission/thumbnail.png",
 	"screenshots": [
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Transmission/screenshot-1.png",
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Transmission/screenshot-2.png",
-		"https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Transmission/screenshot-3.png"
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Transmission/screenshot-1.png",
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Transmission/screenshot-2.png",
+		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Transmission/screenshot-3.png"
 	],
 	"category": [
 		"Downloader"
@@ -26,7 +26,7 @@
 		"donate_text": "",
 		"donate_link": ""
 	},
-	"support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+	"support": "https://discord.com/invite/8NStGMweZh",
 	"website": "https://www.casaos.io",
 	"container": {
 		"image": "lscr.io/linuxserver/transmission:version-3.00-r5",
