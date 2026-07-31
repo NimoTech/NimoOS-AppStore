@@ -441,11 +441,11 @@ x-casaos:
       **Daha fazla bilgi edinin:**
       - [Obsidian Resmi Web Sitesi](https://obsidian.md)
       - [DockerHub](https://hub.docker.com/r/linuxserver/obsidian)
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Obsidian/icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Obsidian/icon.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Obsidian/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Obsidian/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Obsidian/screenshot-3.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Obsidian/screenshot-1.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Obsidian/screenshot-2.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Obsidian/screenshot-3.png
   thumbnail: ""
   scheme: https
   port_map: "15324"

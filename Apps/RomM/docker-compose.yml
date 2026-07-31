@@ -776,13 +776,13 @@ x-casaos:
       **Daha fazla bilgi edinin:**
       - [RomM resmi web sitesi](https://romm.app)
       - [RomM GitHub deposu](https://github.com/rommapp/romm)
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RomM/icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/RomM/icon.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RomM/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RomM/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RomM/screenshot-3.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RomM/screenshot-4.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/RomM/screenshot-5.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/RomM/screenshot-1.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/RomM/screenshot-2.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/RomM/screenshot-3.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/RomM/screenshot-4.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/RomM/screenshot-5.png
   thumbnail: ""
   scheme: http
   port_map: "8285"

@@ -2,18 +2,18 @@
     "version": "1.0",
     "title": "Crafty",
     "name": "crafty",
-    "icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/icon.png",
+    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/icon.png",
     "tagline": "Take control of your Minecraft servers.",
     "overview": "Crafty is an open source Minecraft control panel built using Tornado and AdminLTE, featuring server scheduling, a interactive console and the ability to run almost any type of Minecraft server",
-    "thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/thumbnail.jpg",
+    "thumbnail": "",
     "screenshots": [
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-1.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-2.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-3.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-4.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-5.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-6.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Crafty/screenshot-7.png"
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-1.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-2.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-3.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-4.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-5.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-6.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Crafty/screenshot-7.png"
     ],
     "category": [
         "Games"
@@ -30,7 +30,7 @@
         "donate_text": "", 
         "donate_link": ""
     },
-    "support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+    "support": "https://discord.com/invite/8NStGMweZh",
     "website": "https://www.casaos.io",
     "container": {
         "image": "arcadiatechnology/crafty-4",

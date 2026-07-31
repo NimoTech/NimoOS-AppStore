@@ -133,11 +133,11 @@ x-casaos:
     sv_se: Gitea är ett communityhanterat lätthanterat kodhostningslösning skrivet i Go.
     uk_ua: Gitea - це легке рішення для розміщення коду, кероване спільнотою, написане на Go.
   developer: Gitea
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Gitea/icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/icon.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Gitea/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Gitea/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Gitea/screenshot-3.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/screenshot-1.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/screenshot-2.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/screenshot-3.png
   tagline:
     en_us: Self-hosted software development service
     zh_cn: 自托管软件开发服务
@@ -152,7 +152,7 @@ x-casaos:
     pt_br: Git com uma xícara de chá
     sv_se: Git med en kopp te
     uk_ua: Git з чашкою чаю
-  thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Gitea/thumbnail.png
+  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/thumbnail.png
   tips:
     before_install:
       en_us: |

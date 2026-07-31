@@ -158,8 +158,8 @@ x-casaos:
     uk_ua: "PostgreSQL - це передова, корпоративного класу та відкрита система управління реляційними базами даних. PostgreSQL підтримує як SQL (реляційний), так і JSON (нереляційний) запити."
   developer: PostgreSQL Global Dev't Group
   author: WisdomSky
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PostgreSQL/icon.png
-  thumbnail: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PostgreSQL/icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PostgreSQL/icon.png
+  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PostgreSQL/icon.png
   tips:
     before_install:
       en_us: |

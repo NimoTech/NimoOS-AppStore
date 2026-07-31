@@ -323,10 +323,10 @@ x-casaos:
   architectures:
     - amd64
     - arm64
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PsiTransfer/icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PsiTransfer/icon.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PsiTransfer/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/PsiTransfer/screenshot-2.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PsiTransfer/screenshot-1.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PsiTransfer/screenshot-2.png
   index: /
   main: psitransfer
   port_map: "13001"

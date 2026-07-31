@@ -383,11 +383,11 @@ x-casaos:
   developer: CopyParty
   architectures:
     - amd64
-  icon: https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/CopyParty/icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/CopyParty/icon.png
   screenshot_link:
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/CopyParty/screenshot-1.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/CopyParty/screenshot-2.png
-    - https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/CopyParty/screenshot-3.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/CopyParty/screenshot-1.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/CopyParty/screenshot-2.png
+    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/CopyParty/screenshot-3.png
   index: /
   main: copyparty
   port_map: "29708"

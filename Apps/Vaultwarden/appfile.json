@@ -2,14 +2,14 @@
     "version": "2.0",
     "title": "Vaultwarden",
     "name": "vaultwarden",
-    "icon": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Vaultwarden/icon.png",
+    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/icon.png",
     "tagline": "A self-hosted Bitwarden server",
     "overview": "Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
-    "thumbnail": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Vaultwarden/thumbnail.png",
+    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/thumbnail.png",
     "screenshots": [
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Vaultwarden/screenshot-1.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Vaultwarden/screenshot-2.png",
-        "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Vaultwarden/screenshot-3.png"
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/screenshot-1.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/screenshot-2.png",
+        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/screenshot-3.png"
     ],
     "category": [
         "Utilities"
@@ -26,7 +26,7 @@
         "donate_text": "",
         "donate_link": ""
     },
-    "support": "https://discord.com/servers/nimo-pc-1461244017105703069",
+    "support": "https://discord.com/invite/8NStGMweZh",
     "website": "https://github.com/dani-garcia/vaultwarden",
     "container": {
         "image": "vaultwarden/server:1.24.0",
@@ -78,7 +78,7 @@
     "tips": {},
     "changelog": {
         "latest_updates": "",
-        "url": "https://cdn.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@main/Apps/Vaultwarden/changelog.txt"
+        "url": ""
     },
     "latest_update_date": "1647253154"
 }
