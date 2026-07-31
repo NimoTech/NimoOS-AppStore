@@ -20,13 +20,13 @@ jobs:
         id: build
         run: |
           rm -rf /tmp/build
-          mkdir -p /tmp/build/sysroot/var/lib/casaos/appstore/default.new
+          mkdir -p /tmp/build/sysroot/var/lib/nimoos/appstore/default.new
           cp -rv build/* /tmp/build/
-          cp -rv Apps /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
-          cp -v category-list.json /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
-          cp -v featured-apps.json /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
-          cp -v recommend-list.json /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
-          cp -v README.md /tmp/build/sysroot/var/lib/casaos/appstore/default.new/
+          cp -rv Apps /tmp/build/sysroot/var/lib/nimoos/appstore/default.new/
+          cp -v category-list.json /tmp/build/sysroot/var/lib/nimoos/appstore/default.new/
+          cp -v featured-apps.json /tmp/build/sysroot/var/lib/nimoos/appstore/default.new/
+          cp -v recommend-list.json /tmp/build/sysroot/var/lib/nimoos/appstore/default.new/
+          cp -v README.md /tmp/build/sysroot/var/lib/nimoos/appstore/default.new/
           pushd /tmp
           zip -r main.zip build
 
@@ -46,31 +46,16 @@ jobs:
         run: |
           cp /tmp/main.zip pages/store/main.zip
 
-      - name: Pushes to another repository
-        if: github.ref == 'refs/heads/main'
-        uses: cpina/github-action-push-to-another-repository@main
+      # Publish the store payload where NimoOS installs actually read it. The
+      # steps this replaces pushed to IceWhaleTech/CasaOS-AppStore's gh-pages,
+      # uploaded to an Aliyun bucket named casaos, and purged jsDelivr's cache for
+      # upstream's path — none of which is ours to write to.
+      - name: Upload the store payload to S3
         env:
-          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-        with:
-          source-directory: "pages"
-          destination-github-username: "IceWhaleTech"
-          destination-repository-name: "CasaOS-AppStore"
-          target-branch: "gh-pages"
-          user-email: wiki@casaos.io
-          target-directory: ""
-
-      - name: Upload to oss
-        if: github.ref == 'refs/heads/main'
-        id: upload_to_oss
-        uses: tvrcgo/upload-to-oss@master
-        with:
-          key-id: ${{ secrets.OSS_KEY_ID }}
-          key-secret: ${{ secrets.OSS_KEY_SECRET }}
-          region: oss-cn-shanghai
-          bucket: casaos
-          assets: |
-            /tmp/main.zip:/store/main.zip
-
-      - name: Refresh jsdelivr CDN cache
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-2
         run: |
-          curl https://purge.jsdelivr.net/gh/IceWhaleTech/CasaOS-AppStore@gh-pages/store/main.zip
+          aws s3 cp /tmp/main.zip s3://nimoos-public/nimoos/appstore/store/main.zip \
+            --cache-control "public, max-age=300" \
+            --content-type application/zip
