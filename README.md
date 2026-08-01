@@ -1,5 +1,22 @@
 # CasaOS AppStore
 
+> ### About
+>
+> NimoOS is a fork of [CasaOS](https://github.com/IceWhaleTech/CasaOS)
+> (Apache-2.0), originally developed by IceWhale Technology Co., Ltd.
+> Building on that foundation, NimoOS adds an AI agent, RAG-based
+> retrieval, a knowledge layer, and a built-in web terminal.
+>
+> See [`NOTICE`](./NOTICE) for attribution details. CasaOS and IceWhale
+> are trademarks of IceWhale Technology Co., Ltd. NimoOS is an independent
+> project and is not affiliated with, endorsed by, or sponsored by
+> IceWhale Technology Co., Ltd.
+
+> ⚠️ Multi-user isolation is incomplete — Photos and Search are not yet
+> per-user scoped. Read
+> [SECURITY.md](https://github.com/NimoTech/NimoOS/blob/main/SECURITY.md#known-limitations)
+> before deploying NimoOS for more than one person.
+
 [![GitHub issues by-label](https://img.shields.io/github/issues/IceWhaleTech/CasaOS-AppStore/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/IceWhaleTech/CasaOS-AppStore?style=for-the-badge)](https://github.com/IceWhaleTech/CasaOS-AppStore/graphs/contributors)
 
 CasaOS AppStore needs your help to grow:
