@@ -2,7 +2,7 @@
 set -e
 
 # 版本号优先级: 命令行参数 > APPSTORE_VERSION 环境变量 > 默认值
-# (供 nimo_os_docs/release/release.sh 从 versions.conf 注入)
+# (供发布链路从 versions.conf 注入,见 NimoOS-Build/release)
 VERSION="${1:-${APPSTORE_VERSION:-v1.0.9}}"
 ARCHIVE_NAME="linux-all-appstore-${VERSION}.tar.gz"
 TMP_DIR=$(mktemp -d)

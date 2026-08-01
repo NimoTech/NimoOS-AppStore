@@ -184,7 +184,7 @@ tar 包解包后,安装脚本执行原子目录切换:
 
 ### 发布渠道
 
-通过 `nimo_os_docs/release/release.sh` 驱动:从 `versions.conf` 注入 `APPSTORE_VERSION`,打包后上传到 OSS,配合安装脚本一键部署。详见 `nimo_os_docs/release/RELEASE_AND_INSTALL.md`。
+发布链路从 `versions.conf` 注入 `APPSTORE_VERSION`(见公开仓 [NimoOS-Build](https://github.com/NimoTech/NimoOS-Build) 的 `release/`),打包后上传到 OSS,配合安装脚本一键部署。
 
 ---
 
