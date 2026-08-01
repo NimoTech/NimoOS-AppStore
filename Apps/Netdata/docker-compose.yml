@@ -13,7 +13,7 @@ services:
           memory: 1794M
     image: netdata/netdata:v2.8.1
     labels:
-      icon: https://icon.casaos.io/main/all/netdata.png
+      icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Netdata/icon.png
     pid: host
     ports:
       - target: 19999
