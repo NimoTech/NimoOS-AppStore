@@ -11,7 +11,7 @@ services:
     hostname: fileflows
     image: revenz/fileflows:stable
     labels:
-      icon: https://fileflows.com/img/logo.svg
+      icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/FileFlows/icon.png
     restart: unless-stopped
     ports: 
       - target: 5000

@@ -24,7 +24,7 @@ services:
         --notebook-dir=/opt/notebooks --ip='*' --port=8888 --no-browser
         --allow-root
     labels:
-      icon: https://cdn.jsdelivr.net/gh/LisonEvf/CasaOS-AppStore@main/Apps/Anaconda3/icon.png
+      icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Anaconda3/icon.png
     x-casaos:
       envs:
         - container: PATH
