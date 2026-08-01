@@ -10,6 +10,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Manifests name their artwork by URL, and those URLs are only good if the
+      # file is committed here for the S3 sync to publish. Nothing checked that,
+      # and four different ways of getting it wrong had all reached main.
+      - name: Check every referenced icon and screenshot exists
+        run: python3 check_artwork.py
 
       - uses: robinraju/release-downloader@v1.9
         with:

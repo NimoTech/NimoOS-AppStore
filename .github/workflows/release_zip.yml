@@ -35,18 +35,6 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: ls -lh /tmp/main.zip
 
-      - name: Checkout pages
-        if: github.ref == 'refs/heads/main'
-        uses: actions/checkout@v4
-        with:
-          ref: gh-pages
-          path: pages
-
-      - name: Copy build to pages
-        if: github.ref == 'refs/heads/main'
-        run: |
-          cp /tmp/main.zip pages/store/main.zip
-
       # Publish the store payload where NimoOS installs actually read it. The
       # steps this replaces pushed to IceWhaleTech/CasaOS-AppStore's gh-pages,
       # uploaded to an Aliyun bucket named casaos, and purged jsDelivr's cache for
@@ -61,3 +49,39 @@ jobs:
           aws s3 cp /tmp/main.zip s3://nimoos-public/nimoos/appstore/store/main.zip \
             --cache-control "public, max-age=300" \
             --content-type application/zip
+
+  # The zip deliberately carries no artwork: the build above strips every
+  # icon.png, because manifests reference icons and screenshots by URL rather
+  # than shipping them inside the payload. Those URLs point at this bucket, so
+  # something has to put the files there. Until now nothing did, and the only
+  # reason any icon resolved was that they had been copied up by hand.
+  #
+  # Separate job because the build job's first step deletes every image from its
+  # own checkout before it starts.
+  artwork:
+    if: github.repository == 'NimoTech/NimoOS-AppStore' && github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Publish app icons and screenshots to S3
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: us-east-2
+        # --size-only, not the default mtime+size comparison: every file in a
+        # fresh checkout looks newer than its S3 copy, so the default would
+        # re-upload all 234 MB on every merge. The trade-off is that replacing
+        # an image with a different one of exactly the same byte count would be
+        # skipped; run this step manually if you ever manage that.
+        #
+        # No --delete. The uploader credentials hold no s3:DeleteObject, by
+        # design, so published artwork cannot be removed by a CI run.
+        run: |
+          aws s3 sync Apps s3://nimoos-public/nimoos/appstore/Apps \
+            --exclude "*" \
+            --include "*.png" --include "*.jpg" --include "*.jpeg" \
+            --include "*.svg" --include "*.webp" \
+            --size-only \
+            --cache-control "public, max-age=604800" \
+            --no-progress
