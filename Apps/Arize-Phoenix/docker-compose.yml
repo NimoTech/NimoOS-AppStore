@@ -48,5 +48,5 @@ x-nimoos:
     zh_cn: Arize Phoenix —— 开源 LLM 可观测平台,NimoOS Agent 用它可视化每次运行的全链路追踪。
   port_map: "6006"
   index: /
-  icon: icon.png
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Arize-Phoenix/icon.png
   tips: {}
