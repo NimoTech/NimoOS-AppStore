@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    if: github.repository == 'NimoTech/NimoOS-AppStore'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -51,6 +52,7 @@ jobs:
       # uploaded to an Aliyun bucket named casaos, and purged jsDelivr's cache for
       # upstream's path — none of which is ours to write to.
       - name: Upload the store payload to S3
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
