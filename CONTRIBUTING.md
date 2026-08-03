@@ -1,49 +1,77 @@
-# Contributing to CasaOS AppStore
+# Contributing to the NimoOS AppStore
 
-This document describes how to contribute an app to CasaOS AppStore.
+This document describes how to contribute an app to the NimoOS AppStore.
+Anyone can submit an app — you don't need to be a NimoOS developer.
 
-**IMPORTANT**: Your PR must be *well tested* on your own CasaOS first. This is the mandatory first step for your submission.
+**IMPORTANT**: Your PR must be *well tested* on your own NimoOS first. This is
+the mandatory first step for your submission.
 
-**NOTE**: The legacy `appfile.json` is no longer supported since CasaOS v0.4.4. There is no need to include this file in your PR.
+**NOTE**: Do not use the `latest` tag for `image`. [What's Wrong With The Docker `:latest` Tag?](https://github.com/IceWhaleTech/CasaOS-AppStore/issues/167)
 
-**NOTE**: Do not use `latest` tag for `image`. [What's Wrong With The Docker `:latest` Tag?](https://github.com/IceWhaleTech/CasaOS-AppStore/issues/167)
+## Compatibility with the CasaOS AppStore
 
-## Submit Process
+This store is a fork of the CasaOS AppStore, and the app-definition format is
+deliberately kept **identical** to it. An app definition written for CasaOS
+works here unchanged, and one written here works there. We intend to keep it
+that way: where CasaOS sets a rule for how apps are defined, our rule is the
+same.
 
-App submission should be done via Pull Request. Fork this repository and prepare the app per guidelines below.
+Concretely:
 
-Once the PR is ready, create and assign your PR to anyone from CasaOS Team or some other contributor you trust.
+- The store-metadata extension key is `x-nimoos`, but `x-casaos` is accepted
+  and normalised at load time, so either key works. If you're porting an app
+  definition, you don't have to touch it.
+- Every field, magic value and directory convention below behaves the same way
+  it does upstream. Only the paths that name the product differ
+  (`/etc/nimoos/env` rather than `/etc/casaos/env`).
+
+If you maintain an app in both stores, submit the same `docker-compose.yml` to
+both. If upstream changes a rule and we haven't caught up, open an issue — a
+divergence is a bug on our side, not a decision.
+
+## Submit process
+
+App submission should be done via pull request. Fork this repository, prepare
+the app per the guidelines below, and open the PR against `main`. CI validates
+the app definition and checks that the referenced artwork exists; a maintainer
+reviews from there.
 
 ## Guidelines
 
-### Project Structure
+### Project structure
 
 ```shell
-CasaOS-AppStore
+NimoOS-AppStore
 ├─ category-list.json   # Configuration file for category list
 ├─ recommend-list.json  # Configuration file for recommended apps list
-├─ featured-apps.json   # TBD
+├─ featured-apps.json   # Featured apps shown at the store front
 ├─ help                 # Help script for old version app store
 ├─ Apps                 # Apps Store files
 ├─ build                # Installation script for Apps Store
+├─ package_appstore.sh  # Builds the store archive that ships with NimoOS
 └─ psd-source           # Icon thumbnail screenshot PSD Templates
 ```
 
-### A CasaOS App typically includes following files
+### A NimoOS App typically includes the following files
 
 ```shell
 App-Name
 ├─ docker-compose.yml   # (Required) A valid Docker Compose file
 ├─ icon.png             # (Required) App icon
-├─ screenshot-1.png     # (Required) At least one screenshot is needed, to demonstrate the app runs on CasaOS successfully.
+├─ screenshot-1.png     # (Required) At least one screenshot is needed, to demonstrate the app runs on NimoOS successfully.
 ├─ screenshot-2.png     # (Optional) More screenshots to demonstrate different functionalities is highly recommended.
 ├─ screenshot-3.png     # (Optional) ...
 └─ thumbnail.png        # (Optional) A thumbnail file is needed only if you want it to be featured in AppStore front. (see specification at bottom)
 ```
 
-#### A CasaOS App is a Docker Compose app, or a *compose app*
+Many existing apps also carry a legacy `appfile.json`, kept for compatibility
+with older clients. New submissions don't need one — `docker-compose.yml` is
+the source of truth.
 
-Each directory under [Apps](Apps) correspond to a CasaOS App. The directory should contain at least a `docker-compose.yml` file:
+#### A NimoOS App is a Docker Compose app, or a *compose app*
+
+Each directory under [Apps](Apps) corresponds to a NimoOS App. The directory
+should contain at least a `docker-compose.yml` file:
 
 - It should be a valid [Docker Compose file](https://docs.docker.com/compose/compose-file/). Here are some requirements (but not limited to):
 
@@ -67,7 +95,7 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
 
 - Language codes are case sensitive and should use the standard format, e.g. en_US, zh_CN.
 
-- There are few system wide variables can be used in `environment` and `volumes`:
+- There are a few system wide variables that can be used in `environment` and `volumes`:
 
     ```yaml
     environment:
@@ -80,16 +108,16 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
         source: /DATA/AppData/$AppID/config # $AppID = app name, e.g. syncthing
     ```
 
-- CasaOS specific metadata, also called *store info*, are stored under [extension](https://docs.docker.com/compose/compose-file/#extension) property `x-casaos` at two positions.
+- Store metadata, also called *store info*, is stored under the [extension](https://docs.docker.com/compose/compose-file/#extension) property `x-nimoos` (or `x-casaos` — see the compatibility note above) at two positions.
 
     1. Service level
 
         A `docker-compose.yml` file can contain one or more `services`. Each [service](https://docs.docker.com/compose/compose-file/#services-top-level-element) can have its own store info.
 
-        For the same example, at the buttom of the `syncthing` service in the [`docker-compose.yml` of Syncthing](Apps/Syncthing/docker-compose.yml)
+        For the same example, at the bottom of the `syncthing` service in the [`docker-compose.yml` of Syncthing](Apps/Syncthing/docker-compose.yml)
 
         ```yaml
-        x-casaos:
+        x-nimoos:
             envs:                           # description of each environment variable
                 ...
               - container: PUID
@@ -114,7 +142,7 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
         For the same example, at the bottom of the [`docker-compose.yml` of Syncthing](Apps/Syncthing/docker-compose.yml)
 
         ```yaml
-        x-casaos:
+        x-nimoos:
             architectures:                  # a list of architectures that the app supports
                 - amd64
                 - arm
@@ -139,21 +167,24 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
             port_map: "8384"                # the port for web UI
         ```
 
+        The `author` field names whoever wrote and maintains the app
+        definition. Existing entries credit `CasaOS Team` or an individual
+        community contributor; leave those as they are, and put your own name
+        there for an app you contribute.
+
     3. Magic Value
 
-        **Note**: The features is only working in casaos 0.4.4 and newer version.
-
-        For resolves some cases. Casaos provide some magic value to power your application:
+        For resolving some cases, NimoOS provides some magic values to power your application:
 
         - Environment variable
 
-            your application can read environment variable that user set, such as `OPENAI_API_KEY` from environment variable. It is store in `/etc/casaos/env`. User can set only once and using anywhere. It can be change by api, after change, all application will re up to inject new env var.
+            Your application can read an environment variable that the user set, such as `OPENAI_API_KEY`. It is stored in `/etc/nimoos/env`. The user sets it once and it can be used anywhere. It can be changed by API; after a change, all applications are re-upped to inject the new env var.
 
-            **Note**: change the config didn't change the env var of current container. To set env var, you should use cli to set it.
+            **Note**: changing the config does not change the env var of the current container. To set an env var, you should use the CLI.
 
         - `WEBUI_PORT`
 
-            your `docker-compose.yml` can use `WEBUI_PORT` to set webui port. Casaos will assign a available port for your application. You can use it like this:
+            Your `docker-compose.yml` can use `WEBUI_PORT` to set the WebUI port. NimoOS will assign an available port for your application. You can use it like this:
 
             ```yaml
             ...
@@ -162,7 +193,7 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
                 published: ${WEBUI_PORT}
                 protocol: tcp
             ...
-            x-casaos:
+            x-nimoos:
                 architectures:
                     - amd64
                     - arm64
@@ -180,7 +211,7 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
                 published: ${WEBUI_PORT:-5230}
                 protocol: tcp
             ...
-            x-casaos:
+            x-nimoos:
                 architectures:
                     - amd64
                     - arm64
@@ -189,11 +220,11 @@ Each directory under [Apps](Apps) correspond to a CasaOS App. The directory shou
                 port_map: ${WEBUI_PORT:-5230}
             ```
 
-            **Note**: the WEBUI_PORT only allocated once. It promise the port is available when allocated. If the port be used by other application. It didn't reallocate a new port.
+            **Note**: `WEBUI_PORT` is allocated once. It guarantees the port is available when allocated. If the port is later used by another application, it is not reallocated.
 
 ## Requirements for Featured Apps
 
-Once in a while, we pick certain apps as featured apps and display them at the AppStore front. The standard for apps to be featured is a bit higher than rest of the apps:
+Once in a while, we pick certain apps as featured apps and display them at the AppStore front. The standard for apps to be featured is a bit higher than the rest of the apps:
 
 - Icon image should be a transparent background PNG image with a size of 192x192 pixels.
 - Thumbnail image should be 784x442 pixels, with a rounded corner mask. It is recommended to be saved as a PNG image with a transparent background.
@@ -201,4 +232,11 @@ Once in a while, we pick certain apps as featured apps and display them at the A
 
 Please find the prepared [PSD template files](psd-source), to quickly create the above images if you need.
 
-If you have any feedback and suggestion about this contributing process, please let us know via Discord or Issues immediately. Thanks!
+## Anything else
+
+The general contribution rules for NimoOS repositories — the DCO sign-off, pull
+request conventions, the code of conduct — are in the
+[organisation-wide contributing guide](https://github.com/NimoTech/.github/blob/main/CONTRIBUTING.md).
+
+If you have any feedback or suggestions about this contributing process, please
+let us know via Discord or Issues immediately. Thanks!
