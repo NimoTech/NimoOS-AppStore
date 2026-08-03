@@ -3,37 +3,92 @@ name: validate docker compose file
 on:
     pull_request:
       types: [opened, synchronize]
-  
+
+permissions:
+  contents: read
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          path: NimoOS-AppStore
 
       # Manifests name their artwork by URL, and those URLs are only good if the
       # file is committed here for the S3 sync to publish. Nothing checked that,
       # and four different ways of getting it wrong had all reached main.
       - name: Check every referenced icon and screenshot exists
+        working-directory: NimoOS-AppStore
         run: python3 check_artwork.py
 
-      - uses: robinraju/release-downloader@v1.9
+      # The validator used to be downloaded from NimoTech/NimoOS-AppManagement's
+      # latest release. That repository has never published one — upstream did,
+      # this fork does not — so the step failed with
+      #   [getlatestRelease] Unexpected response: 404
+      # on every run. Nobody knew, because Actions was disabled org-wide until
+      # now and this workflow had therefore never executed.
+      #
+      # Building from source removes the dependency on a release that may never
+      # exist, and checks manifests against the validator as it is today rather
+      # than as of whenever one was last shipped. AppManagement's go.mod
+      # redirects NimoOS-Common to ../NimoOS-Common and its go:generate reads
+      # ../NimoOS-MessageBus's OpenAPI spec, so all three must be on disk.
+      - name: Check out NimoOS-AppManagement
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
-          repository: "NimoTech/NimoOS-AppManagement"
-          latest: true
-          fileName: "linux-amd64-nimoos-app-management-validator-*.tar.gz"
+          repository: NimoTech/NimoOS-AppManagement
+          path: NimoOS-AppManagement
+          # Only needed while these repositories are private; the default job
+          # token is enough once they are public.
+          token: ${{ secrets.CI_SIBLING_TOKEN || github.token }}
+      - name: Check out NimoOS-Common
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: NimoTech/NimoOS-Common
+          path: NimoOS-Common
+          token: ${{ secrets.CI_SIBLING_TOKEN || github.token }}
+      - name: Check out NimoOS-MessageBus
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: NimoTech/NimoOS-MessageBus
+          path: NimoOS-MessageBus
+          token: ${{ secrets.CI_SIBLING_TOKEN || github.token }}
 
-      - name: Extract
-        run: |
-            tar zxf linux-amd64-nimoos-app-management-validator-*.tar.gz
+      - name: Set up Go
+        uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
+        with:
+          go-version-file: NimoOS-AppManagement/go.mod
+          cache-dependency-path: NimoOS-AppManagement/go.sum
 
-      - name: Install
+      # codegen/ is gitignored, so cmd/validator does not compile from a fresh
+      # clone until go generate has run.
+      - name: Build the validator
+        working-directory: NimoOS-AppManagement
+        env:
+          CGO_ENABLED: "0"
         run: |
-            chmod +x build/sysroot/usr/bin/nimoos-app-management-validator
+          go generate ./...
+          go build -o "$RUNNER_TEMP/nimoos-app-management-validator" ./cmd/validator
 
-      - name: Check All Docker Compose File
-        id: validate_docker_compose
+      # The loop this replaces piped find into `while read` and never looked at
+      # the validator's exit code, so a manifest that failed validation still
+      # left the job green. It could report success but never failure.
+      - name: Check all docker compose files
+        working-directory: NimoOS-AppStore
         run: |
-            find . -type f \( -name "docker-compose.yaml" -or -name "docker-compose.yml" \) | while read -r file; do
-              echo $file
-              build/sysroot/usr/bin/nimoos-app-management-validator $file
-            done
+          failed=0
+          count=0
+          while IFS= read -r -d '' file; do
+            count=$((count + 1))
+            if ! "$RUNNER_TEMP/nimoos-app-management-validator" "$file"; then
+              echo "::error file=$file::failed docker-compose validation"
+              failed=$((failed + 1))
+            fi
+          done < <(find . -type f \( -name "docker-compose.yaml" -o -name "docker-compose.yml" \) -print0)
+          echo "validated $count manifests, $failed failed"
+          if [ "$count" -eq 0 ]; then
+            echo "::error::found no manifests to validate — has the layout changed?"
+            exit 1
+          fi
+          [ "$failed" -eq 0 ]
