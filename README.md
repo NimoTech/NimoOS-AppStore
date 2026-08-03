@@ -17,8 +17,6 @@
 > [SECURITY.md](https://github.com/NimoTech/NimoOS/blob/main/SECURITY.md#known-limitations)
 > before deploying NimoOS for more than one person.
 
-[![GitHub issues by-label](https://img.shields.io/github/issues/NimoTech/NimoOS-AppStore/help%20wanted?label=help%20wanted&style=for-the-badge)](https://github.com/NimoTech/NimoOS-AppStore/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) [![GitHub contributors](https://img.shields.io/github/contributors/NimoTech/NimoOS-AppStore?style=for-the-badge)](https://github.com/NimoTech/NimoOS-AppStore/graphs/contributors)
-
 NimoOS AppStore needs your help to grow:
 
 - See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute apps in Docker Compose format.
@@ -36,6 +34,14 @@ NimoOS lets you customize your device with a variety of third-party app stores. 
 Simply copy the provided source link and add it to your NimoOS settings to access the corresponding app store.
 
 - [Awesome CasaOS store list](https://awesome.casaos.io/content/3rd-party-app-stores/list.html)
+
+## Documentation
+
+See [OVERVIEW.md](./OVERVIEW.md) for architecture details.
+
+## License
+
+Apache-2.0 — see [`LICENSE`](./LICENSE) and [`NOTICE`](./NOTICE).
 
 ## Contributors
 
