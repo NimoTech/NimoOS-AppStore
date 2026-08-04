@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# 版本号优先级: 命令行参数 > APPSTORE_VERSION 环境变量 > 默认值
-# (供发布链路从 versions.conf 注入,见 NimoOS-Build/release)
+# Version precedence: CLI argument > APPSTORE_VERSION env var > default
+# (injected by the release pipeline from versions.conf, see NimoOS-Build/release)
 VERSION="${1:-${APPSTORE_VERSION:-v1.0.9}}"
 ARCHIVE_NAME="linux-all-appstore-${VERSION}.tar.gz"
 TMP_DIR=$(mktemp -d)

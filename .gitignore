@@ -1,4 +1,4 @@
 .idea/
 .DS_Store
-# 发布构建产物
+# release build artifacts
 linux-all-appstore-*.tar.gz
