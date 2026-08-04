@@ -8,8 +8,11 @@ IceWhale Technology Co., Ltd., licensed under the Apache License,
 Version 2.0.
 
 This codebase is a fork of CasaOS and has been substantially
-modified. The complete record of modifications is preserved in the
-git history of this repository.
+modified. This repository was created from a snapshot import, so
+its git history begins at the import rather than at the original
+fork point. The complete history of the original CasaOS source is
+preserved in the upstream repositories at
+https://github.com/IceWhaleTech.
 
 CasaOS, ZimaOS and IceWhale are trademarks of IceWhale Technology
 Co., Ltd. NimoOS is an independent project and is not affiliated
