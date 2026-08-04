@@ -2,7 +2,7 @@ name: index-tts-nvidia
 
 services:
   index-tts-nvidia:
-    image: icewhaletech/index-tts:2.0
+    image: ghcr.io/nimotech/index-tts:2.0
     container_name: index-tts
     restart: unless-stopped
     ports:

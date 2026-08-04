@@ -1,7 +1,7 @@
 name: turbodiffusion_nvidia
 services:
   turbodiffusion:
-    image: icewhaletech/turbodiffusion:20260312
+    image: ghcr.io/nimotech/turbodiffusion:20260312
     container_name: turbodiffusion
     deploy:
       resources:

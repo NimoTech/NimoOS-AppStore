@@ -2,7 +2,7 @@ name: deepseek-ocr-nvidia
 
 services:
   deepseek-ocr-backend:
-    image: icewhaletech/deepseek-ocr-backend:v2.2.0
+    image: ghcr.io/nimotech/deepseek-ocr-backend:v2.2.0
     container_name: deepseek-ocr-backend
     environment:
       # API Configuration
@@ -233,7 +233,7 @@ services:
             zh_CN: 模型目录
 
   deepseek-ocr-frontend:
-    image: icewhaletech/deepseek-ocr-frontend:v2.2.0
+    image: ghcr.io/nimotech/deepseek-ocr-frontend:v2.2.0
     container_name: deepseek-ocr-frontend
     ports:
       - target: 80
