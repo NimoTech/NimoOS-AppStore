@@ -1,0 +1,362 @@
+name: comfyui_intel
+services:
+  comfyui_intel:
+    image: ghcr.io/nimotech/comfyui:xpu-20260803
+    container_name: comfyui-intel
+    devices:
+    - /dev/dri:/dev/dri
+    ipc: host
+    environment:
+      CLI_ARGS: ''
+    ports:
+    - target: 8188
+      published: '18188'
+      protocol: tcp
+    volumes:
+    - type: bind
+      source: /DATA/AppData/$AppID/storage
+      target: /root
+    - type: bind
+      source: /DATA/AppData/$AppID/models
+      target: /root/ComfyUI/models
+    - type: bind
+      source: /DATA/AppData/$AppID/input
+      target: /root/ComfyUI/input
+    - type: bind
+      source: /DATA/AppData/$AppID/output
+      target: /root/ComfyUI/output
+    restart: unless-stopped
+    x-casaos:
+      envs:
+      - container: CLI_ARGS
+        description:
+          de_DE: Zusätzliche ComfyUI-Startargumente
+          el_GR: Πρόσθετα ορίσματα εκκίνησης ComfyUI
+          en_GB: Extra ComfyUI launch arguments
+          en_US: Extra ComfyUI launch arguments
+          fr_FR: Arguments de lancement ComfyUI supplémentaires
+          hr_HR: Dodatni argumenti pokretanja ComfyUI
+          it_IT: Argomenti di avvio ComfyUI aggiuntivi
+          ja_JP: ComfyUIの追加起動引数
+          ko_KR: ComfyUI 추가 실행 인수
+          nb_NO: Ekstra ComfyUI-oppstartsargumenter
+          pt_PT: Argumentos de arranque adicionais do ComfyUI
+          ru_RU: Дополнительные аргументы запуска ComfyUI
+          sv_SE: Extra ComfyUI-startargument
+          tr_TR: Ek ComfyUI başlatma argümanları
+          zh_CN: ComfyUI 额外启动参数
+      ports:
+      - container: '8188'
+        description:
+          de_DE: ComfyUI Web-UI-Port
+          el_GR: Θύρα web διεπαφής ComfyUI
+          en_GB: ComfyUI web interface port
+          en_US: ComfyUI web interface port
+          fr_FR: Port de l'interface web ComfyUI
+          hr_HR: Port web sučelja ComfyUI
+          it_IT: Porta dell'interfaccia web ComfyUI
+          ja_JP: ComfyUI Webインターフェースポート
+          ko_KR: ComfyUI 웹 인터페이스 포트
+          nb_NO: ComfyUI web-grensesnittport
+          pt_PT: Porta da interface web ComfyUI
+          ru_RU: Порт веб-интерфейса ComfyUI
+          sv_SE: ComfyUI webbgränssnittsport
+          tr_TR: ComfyUI web arayüzü portu
+          zh_CN: ComfyUI Web 界面端口
+      volumes:
+      - container: /root
+        description:
+          de_DE: Anwendungsspeicher (ComfyUI-Umgebung, Custom Nodes, Einstellungen)
+          el_GR: Αποθήκευση εφαρμογής (περιβάλλον ComfyUI, custom nodes, ρυθμίσεις)
+          en_GB: Application storage (ComfyUI environment, custom nodes, settings)
+          en_US: Application storage (ComfyUI environment, custom nodes, settings)
+          fr_FR: Stockage de l'application (environnement ComfyUI, custom nodes, réglages)
+          hr_HR: Pohrana aplikacije (ComfyUI okruženje, custom čvorovi, postavke)
+          it_IT: Spazio dell'applicazione (ambiente ComfyUI, custom node, impostazioni)
+          ja_JP: アプリケーションストレージ(ComfyUI環境、カスタムノード、設定)
+          ko_KR: 애플리케이션 저장소(ComfyUI 환경, 커스텀 노드, 설정)
+          nb_NO: Applikasjonslagring (ComfyUI-miljø, egendefinerte noder, innstillinger)
+          pt_PT: Armazenamento da aplicação (ambiente ComfyUI, custom nodes, definições)
+          ru_RU: Хранилище приложения (окружение ComfyUI, пользовательские узлы, настройки)
+          sv_SE: Programlagring (ComfyUI-miljö, egna noder, inställningar)
+          tr_TR: Uygulama depolama alanı (ComfyUI ortamı, özel düğümler, ayarlar)
+          zh_CN: 应用存储(ComfyUI 环境、自定义节点、设置)
+      - container: /root/ComfyUI/models
+        description:
+          de_DE: Modelldateien (Checkpoints, LoRAs, VAE, Upscaler)
+          el_GR: Αρχεία μοντέλων (checkpoints, LoRA, VAE, upscalers)
+          en_GB: Model files (checkpoints, LoRAs, VAE, upscalers)
+          en_US: Model files (checkpoints, LoRAs, VAE, upscalers)
+          fr_FR: Fichiers de modèles (checkpoints, LoRA, VAE, upscalers)
+          hr_HR: Datoteke modela (checkpointovi, LoRA, VAE, upscaleri)
+          it_IT: File dei modelli (checkpoint, LoRA, VAE, upscaler)
+          ja_JP: モデルファイル(チェックポイント、LoRA、VAE、アップスケーラー)
+          ko_KR: 모델 파일(체크포인트, LoRA, VAE, 업스케일러)
+          nb_NO: Modellfiler (checkpoints, LoRA-er, VAE, oppskalere)
+          pt_PT: Ficheiros de modelos (checkpoints, LoRAs, VAE, upscalers)
+          ru_RU: Файлы моделей (чекпоинты, LoRA, VAE, апскейлеры)
+          sv_SE: Modellfiler (checkpoints, LoRA, VAE, uppskalare)
+          tr_TR: Model dosyaları (checkpoint'ler, LoRA'lar, VAE, upscaler'lar)
+          zh_CN: 模型文件(底模、LoRA、VAE、放大模型)
+      - container: /root/ComfyUI/input
+        description:
+          de_DE: Eingabebilder und -dateien
+          el_GR: Εικόνες και αρχεία εισόδου
+          en_GB: Input images and files
+          en_US: Input images and files
+          fr_FR: Images et fichiers d'entrée
+          hr_HR: Ulazne slike i datoteke
+          it_IT: Immagini e file di input
+          ja_JP: 入力画像とファイル
+          ko_KR: 입력 이미지 및 파일
+          nb_NO: Inndatabilder og -filer
+          pt_PT: Imagens e ficheiros de entrada
+          ru_RU: Входные изображения и файлы
+          sv_SE: Indatabilder och -filer
+          tr_TR: Girdi görüntüleri ve dosyaları
+          zh_CN: 输入图片与文件
+      - container: /root/ComfyUI/output
+        description:
+          de_DE: Generierte Bilder und Videos
+          el_GR: Παραγόμενες εικόνες και βίντεο
+          en_GB: Generated images and videos
+          en_US: Generated images and videos
+          fr_FR: Images et vidéos générées
+          hr_HR: Generirane slike i videozapisi
+          it_IT: Immagini e video generati
+          ja_JP: 生成された画像と動画
+          ko_KR: 생성된 이미지와 비디오
+          nb_NO: Genererte bilder og videoer
+          pt_PT: Imagens e vídeos gerados
+          ru_RU: Сгенерированные изображения и видео
+          sv_SE: Genererade bilder och videor
+          tr_TR: Oluşturulan görüntüler ve videolar
+          zh_CN: 生成的图片与视频
+x-casaos:
+  title:
+    de_DE: ComfyUI (Intel GPU)
+    el_GR: ComfyUI (Intel GPU)
+    en_GB: ComfyUI (Intel GPU)
+    en_US: ComfyUI (Intel GPU)
+    fr_FR: ComfyUI (Intel GPU)
+    hr_HR: ComfyUI (Intel GPU)
+    it_IT: ComfyUI (Intel GPU)
+    ja_JP: ComfyUI (Intel GPU)
+    ko_KR: ComfyUI (Intel GPU)
+    nb_NO: ComfyUI (Intel GPU)
+    pt_PT: ComfyUI (Intel GPU)
+    ru_RU: ComfyUI (Intel GPU)
+    sv_SE: ComfyUI (Intel GPU)
+    tr_TR: ComfyUI (Intel GPU)
+    zh_CN: ComfyUI (Intel GPU)
+  tagline:
+    de_DE: Die leistungsstärkste quelloffene, knotenbasierte Oberfläche für generative KI
+    el_GR: Η πιο ισχυρή ανοιχτού κώδικα διεπαφή ροών εργασίας γενετικής AI βασισμένη σε κόμβους
+    en_GB: The most powerful open-source, node-based interface for generative AI
+    en_US: The most powerful open-source, node-based interface for generative AI
+    fr_FR: L'interface nodale open source la plus puissante pour l'IA générative
+    hr_HR: Najmoćnije open-source sučelje za generativni AI temeljeno na čvorovima
+    it_IT: La più potente interfaccia open source a nodi per l'IA generativa
+    ja_JP: 最も強力なオープンソースのノードベース生成AIインターフェース
+    ko_KR: 가장 강력한 오픈소스 노드 기반 생성형 AI 인터페이스
+    nb_NO: Det kraftigste åpen kildekode, nodebaserte grensesnittet for generativ KI
+    pt_PT: A interface nodal open source mais poderosa para IA generativa
+    ru_RU: Самый мощный открытый узловой интерфейс для генеративного ИИ
+    sv_SE: Det kraftfullaste nodbaserade gränssnittet med öppen källkod för generativ AI
+    tr_TR: Üretken yapay zekâ için en güçlü açık kaynaklı, düğüm tabanlı arayüz
+    zh_CN: 最强大的开源节点式生成式 AI 工作流界面
+  description:
+    de_DE: |-
+      ComfyUI ist eine leistungsstarke, modulare, knotenbasierte Oberfläche für generative KI. Erstellen Sie Bild-, Video- und Audio-Pipelines visuell als Graphen, nutzen Sie Community-Workflows und erweitern Sie alles mit Custom Nodes.
+
+      **Diese Edition:** beschleunigt auf Intel-GPUs (Arc-Grafikkarten und aktuelle iGPUs) über PyTorch XPU. Der Container benötigt die Host-GPU unter /dev/dri.
+
+      **Modelle:** Modelldateien unter `/DATA/AppData/comfyui_intel/models` ablegen (z. B. `checkpoints/`, `loras/`, `vae/`) und die Modellliste in der Web-UI aktualisieren.
+
+      **Mehr erfahren:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker-Image](https://github.com/YanWenKun/ComfyUI-Docker)
+    el_GR: |-
+      Το ComfyUI είναι μια ισχυρή, αρθρωτή διεπαφή γενετικής AI βασισμένη σε κόμβους. Δημιουργήστε ροές παραγωγής εικόνας, βίντεο και ήχου οπτικά ως γράφους, επαναχρησιμοποιήστε workflows της κοινότητας και επεκτείνετε τα πάντα με custom nodes.
+
+      **Αυτή η έκδοση:** επιταχύνεται σε Intel GPU (διακριτές Arc και πρόσφατες iGPU) μέσω PyTorch XPU. Το container χρειάζεται την GPU του host στο /dev/dri.
+
+      **Μοντέλα:** τοποθετήστε τα αρχεία μοντέλων στο `/DATA/AppData/comfyui_intel/models` (π.χ. `checkpoints/`, `loras/`, `vae/`) και ανανεώστε τη λίστα μοντέλων στο web UI.
+
+      **Μάθετε περισσότερα:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker image](https://github.com/YanWenKun/ComfyUI-Docker)
+    en_GB: |-
+      ComfyUI is a powerful, modular, node-based interface for generative AI. Build image, video and audio generation pipelines visually as graphs, reuse community workflows, and extend everything with custom nodes.
+
+      **This edition:** accelerated on Intel GPUs (Arc discrete GPUs and recent iGPUs) through PyTorch XPU. The container needs the host GPU exposed at /dev/dri.
+
+      **Models:** put model files under `/DATA/AppData/comfyui_intel/models` (e.g. `checkpoints/`, `loras/`, `vae/`), then refresh the model list in the web UI.
+
+      **Learn more:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker image](https://github.com/YanWenKun/ComfyUI-Docker)
+    en_US: |-
+      ComfyUI is a powerful, modular, node-based interface for generative AI. Build image, video and audio generation pipelines visually as graphs, reuse community workflows, and extend everything with custom nodes.
+
+      **This edition:** accelerated on Intel GPUs (Arc discrete GPUs and recent iGPUs) through PyTorch XPU. The container needs the host GPU exposed at /dev/dri.
+
+      **Models:** put model files under `/DATA/AppData/comfyui_intel/models` (e.g. `checkpoints/`, `loras/`, `vae/`), then refresh the model list in the web UI.
+
+      **Learn more:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker image](https://github.com/YanWenKun/ComfyUI-Docker)
+    fr_FR: |-
+      ComfyUI est une interface nodale puissante et modulaire pour l'IA générative. Construisez visuellement des pipelines d'images, de vidéo et d'audio sous forme de graphes, réutilisez les workflows de la communauté et étendez tout avec des custom nodes.
+
+      **Cette édition :** accéléré sur les GPU Intel (GPU dédiés Arc et iGPU récents) via PyTorch XPU. Le conteneur a besoin du GPU hôte exposé sur /dev/dri.
+
+      **Modèles :** placez les fichiers de modèles dans `/DATA/AppData/comfyui_intel/models` (p. ex. `checkpoints/`, `loras/`, `vae/`), puis actualisez la liste des modèles dans l'interface web.
+
+      **En savoir plus :** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Image Docker](https://github.com/YanWenKun/ComfyUI-Docker)
+    hr_HR: |-
+      ComfyUI je moćno, modularno sučelje za generativni AI temeljeno na čvorovima. Vizualno gradite cjevovode za generiranje slika, videa i zvuka kao grafove, koristite workflowove zajednice i proširujte sve custom čvorovima.
+
+      **Ovo izdanje:** ubrzano na Intel GPU-ima (Arc diskretne kartice i noviji iGPU-i) putem PyTorch XPU. Kontejner treba GPU domaćina izložen na /dev/dri.
+
+      **Modeli:** datoteke modela stavite u `/DATA/AppData/comfyui_intel/models` (npr. `checkpoints/`, `loras/`, `vae/`), zatim osvježite popis modela u web sučelju.
+
+      **Saznajte više:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker slika](https://github.com/YanWenKun/ComfyUI-Docker)
+    it_IT: |-
+      ComfyUI è un'interfaccia a nodi potente e modulare per l'IA generativa. Costruisci visivamente pipeline di generazione di immagini, video e audio come grafi, riutilizza i workflow della community ed estendi tutto con custom node.
+
+      **Questa edizione:** accelerato su GPU Intel (GPU dedicate Arc e iGPU recenti) tramite PyTorch XPU. Il container richiede la GPU host esposta su /dev/dri.
+
+      **Modelli:** metti i file dei modelli in `/DATA/AppData/comfyui_intel/models` (es. `checkpoints/`, `loras/`, `vae/`), poi aggiorna l'elenco modelli nella web UI.
+
+      **Scopri di più:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Immagine Docker](https://github.com/YanWenKun/ComfyUI-Docker)
+    ja_JP: |-
+      ComfyUIは、強力でモジュール式のノードベース生成AIインターフェースです。画像・動画・音声の生成パイプラインをグラフとして視覚的に構築し、コミュニティのワークフローを再利用し、カスタムノードで自由に拡張できます。
+
+      **このエディション:**PyTorch XPUによりIntel GPU(Arc dGPUおよび新しいiGPU)で高速化。コンテナはホストの /dev/dri へのアクセスが必要です。
+
+      **モデル:**モデルファイルを `/DATA/AppData/comfyui_intel/models`(例:`checkpoints/`、`loras/`、`vae/`)に配置し、Web UIでモデルリストを更新してください。
+
+      **詳細:**[ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Dockerイメージ](https://github.com/YanWenKun/ComfyUI-Docker)
+    ko_KR: |-
+      ComfyUI는 강력하고 모듈화된 노드 기반 생성형 AI 인터페이스입니다. 이미지·비디오·오디오 생성 파이프라인을 그래프로 시각적으로 구성하고, 커뮤니티 워크플로를 재사용하며, 커스텀 노드로 무한히 확장할 수 있습니다.
+
+      **이 에디션:** PyTorch XPU를 통해 Intel GPU(Arc 외장 GPU 및 최신 iGPU)에서 가속됩니다. 컨테이너는 호스트의 /dev/dri 접근이 필요합니다.
+
+      **모델:** 모델 파일을 `/DATA/AppData/comfyui_intel/models`(예: `checkpoints/`, `loras/`, `vae/`)에 넣고 웹 UI에서 모델 목록을 새로고침하세요.
+
+      **자세히 알아보기:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker 이미지](https://github.com/YanWenKun/ComfyUI-Docker)
+    nb_NO: |-
+      ComfyUI er et kraftig, modulært, nodebasert grensesnitt for generativ KI. Bygg pipeline for bilde-, video- og lydgenerering visuelt som grafer, gjenbruk fellesskapets arbeidsflyter og utvid alt med egendefinerte noder.
+
+      **Denne utgaven:** akselerert på Intel-GPU-er (Arc dedikerte GPU-er og nyere iGPU-er) via PyTorch XPU. Kontaineren trenger vertens GPU eksponert på /dev/dri.
+
+      **Modeller:** legg modellfiler under `/DATA/AppData/comfyui_intel/models` (f.eks. `checkpoints/`, `loras/`, `vae/`), og oppdater modellisten i web-UI.
+
+      **Les mer:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker-bilde](https://github.com/YanWenKun/ComfyUI-Docker)
+    pt_PT: |-
+      O ComfyUI é uma interface nodal poderosa e modular para IA generativa. Construa visualmente pipelines de geração de imagem, vídeo e áudio como grafos, reutilize workflows da comunidade e estenda tudo com custom nodes.
+
+      **Esta edição:** acelerado em GPUs Intel (GPUs dedicadas Arc e iGPUs recentes) através de PyTorch XPU. O contentor precisa da GPU do host exposta em /dev/dri.
+
+      **Modelos:** coloque os ficheiros de modelos em `/DATA/AppData/comfyui_intel/models` (p. ex. `checkpoints/`, `loras/`, `vae/`) e atualize a lista de modelos na interface web.
+
+      **Saiba mais:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Imagem Docker](https://github.com/YanWenKun/ComfyUI-Docker)
+    ru_RU: |-
+      ComfyUI — мощный модульный узловой интерфейс для генеративного ИИ. Визуально собирайте конвейеры генерации изображений, видео и звука в виде графов, используйте готовые workflow сообщества и расширяйте всё пользовательскими узлами.
+
+      **Эта редакция:** ускоряется на GPU Intel (дискретные Arc и современные iGPU) через PyTorch XPU. Контейнеру нужен GPU хоста через /dev/dri.
+
+      **Модели:** поместите файлы моделей в `/DATA/AppData/comfyui_intel/models` (например, `checkpoints/`, `loras/`, `vae/`) и обновите список моделей в веб-интерфейсе.
+
+      **Подробнее:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker-образ](https://github.com/YanWenKun/ComfyUI-Docker)
+    sv_SE: |-
+      ComfyUI är ett kraftfullt, modulärt, nodbaserat gränssnitt för generativ AI. Bygg pipelines för bild-, video- och ljudgenerering visuellt som grafer, återanvänd communityns arbetsflöden och utöka allt med egna noder.
+
+      **Denna utgåva:** accelereras på Intel-GPU:er (Arc dedikerade GPU:er och nyare iGPU:er) via PyTorch XPU. Containern behöver värdens GPU exponerad på /dev/dri.
+
+      **Modeller:** lägg modellfiler under `/DATA/AppData/comfyui_intel/models` (t.ex. `checkpoints/`, `loras/`, `vae/`) och uppdatera modellistan i webbgränssnittet.
+
+      **Läs mer:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker-avbildning](https://github.com/YanWenKun/ComfyUI-Docker)
+    tr_TR: |-
+      ComfyUI, üretken yapay zekâ için güçlü, modüler, düğüm tabanlı bir arayüzdür. Görüntü, video ve ses üretim hatlarını graf olarak görsel şekilde kurun, topluluk iş akışlarını yeniden kullanın ve her şeyi özel düğümlerle genişletin.
+
+      **Bu sürüm:** PyTorch XPU aracılığıyla Intel GPU'larda (Arc harici GPU'lar ve yeni iGPU'lar) hızlandırılır. Konteynerin /dev/dri üzerinden ana makine GPU'suna erişmesi gerekir.
+
+      **Modeller:** model dosyalarını `/DATA/AppData/comfyui_intel/models` altına koyun (örn. `checkpoints/`, `loras/`, `vae/`), ardından web arayüzünde model listesini yenileyin.
+
+      **Daha fazla bilgi:** [ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker imajı](https://github.com/YanWenKun/ComfyUI-Docker)
+    zh_CN: |-
+      ComfyUI 是强大、模块化的节点式生成式 AI 界面。以图形化节点搭建图像、视频、音频生成流水线,复用社区工作流,并可通过自定义节点无限扩展。
+
+      **本版本:**通过 PyTorch XPU 在 Intel GPU(Arc 独显与新款核显)上加速。容器需要宿主机通过 /dev/dri 暴露 GPU。
+
+      **模型:**将模型文件放入 `/DATA/AppData/comfyui_intel/models`(如 `checkpoints/`、`loras/`、`vae/`),然后在 Web 界面刷新模型列表。
+
+      **了解更多:**[ComfyUI](https://github.com/comfyanonymous/ComfyUI) · [Docker 镜像](https://github.com/YanWenKun/ComfyUI-Docker)
+  tips:
+    before_install:
+      de_DE: |-
+        1. Der erste Start initialisiert die Python-Umgebung und lädt ggf. Komponenten herunter — bitte einige Minuten warten, bevor Sie die Web-UI öffnen.
+        2. Modelldateien gehören unter `/DATA/AppData/comfyui_intel/models` — z. B. Stable-Diffusion-Checkpoints nach `checkpoints/`, LoRAs nach `loras/`, VAEs nach `vae/`. Danach die Modellliste in der UI aktualisieren.
+        3. Erfordert eine Intel-GPU unter `/dev/dri` auf dem Host (Kernel-Treiber i915/xe). Alle Render-Geräte werden an den Container durchgereicht.
+      el_GR: |-
+        1. Η πρώτη εκκίνηση αρχικοποιεί το περιβάλλον Python και ενδέχεται να κατεβάσει στοιχεία — περιμένετε μερικά λεπτά πριν ανοίξετε το web UI.
+        2. Τα αρχεία μοντέλων πηγαίνουν στο `/DATA/AppData/comfyui_intel/models` — π.χ. checkpoints στο `checkpoints/`, LoRA στο `loras/`, VAE στο `vae/`. Μετά ανανεώστε τη λίστα μοντέλων στο UI.
+        3. Απαιτεί Intel GPU εκτεθειμένη στο `/dev/dri` του host (driver πυρήνα i915/xe). Όλες οι συσκευές render περνούν στο container.
+      en_GB: |-
+        1. The first start initializes the Python environment and may download components — give it a few minutes before opening the web UI.
+        2. Model files go under `/DATA/AppData/comfyui_intel/models` — e.g. Stable Diffusion checkpoints into `checkpoints/`, LoRAs into `loras/`, VAEs into `vae/`. Refresh the model list in the UI after copying.
+        3. Requires an Intel GPU exposed at `/dev/dri` on the host (kernel i915/xe driver). All render devices are passed to the container.
+      en_US: |-
+        1. The first start initializes the Python environment and may download components — give it a few minutes before opening the web UI.
+        2. Model files go under `/DATA/AppData/comfyui_intel/models` — e.g. Stable Diffusion checkpoints into `checkpoints/`, LoRAs into `loras/`, VAEs into `vae/`. Refresh the model list in the UI after copying.
+        3. Requires an Intel GPU exposed at `/dev/dri` on the host (kernel i915/xe driver). All render devices are passed to the container.
+      fr_FR: |-
+        1. Le premier démarrage initialise l'environnement Python et peut télécharger des composants — patientez quelques minutes avant d'ouvrir l'interface web.
+        2. Les fichiers de modèles vont dans `/DATA/AppData/comfyui_intel/models` — p. ex. les checkpoints Stable Diffusion dans `checkpoints/`, les LoRA dans `loras/`, les VAE dans `vae/`. Actualisez ensuite la liste des modèles dans l'interface.
+        3. Nécessite un GPU Intel exposé sur `/dev/dri` de l'hôte (pilote noyau i915/xe). Tous les périphériques de rendu sont transmis au conteneur.
+      hr_HR: |-
+        1. Prvo pokretanje inicijalizira Python okruženje i može preuzeti komponente — pričekajte nekoliko minuta prije otvaranja web sučelja.
+        2. Datoteke modela idu u `/DATA/AppData/comfyui_intel/models` — npr. Stable Diffusion checkpointovi u `checkpoints/`, LoRA u `loras/`, VAE u `vae/`. Nakon kopiranja osvježite popis modela u sučelju.
+        3. Zahtijeva Intel GPU izložen na `/dev/dri` domaćina (kernel i915/xe upravljački program). Svi render uređaji prosljeđuju se kontejneru.
+      it_IT: |-
+        1. Il primo avvio inizializza l'ambiente Python e può scaricare componenti — attendi qualche minuto prima di aprire la web UI.
+        2. I file dei modelli vanno in `/DATA/AppData/comfyui_intel/models` — es. i checkpoint Stable Diffusion in `checkpoints/`, i LoRA in `loras/`, i VAE in `vae/`. Dopo la copia aggiorna l'elenco modelli nella UI.
+        3. Richiede una GPU Intel esposta su `/dev/dri` dell'host (driver kernel i915/xe). Tutti i dispositivi di rendering sono passati al container.
+      ja_JP: |-
+        1. 初回起動時はPython環境の初期化とコンポーネントのダウンロードが行われます —— Web UIを開く前に数分お待ちください。
+        2. モデルファイルは `/DATA/AppData/comfyui_intel/models` に配置します —— 例:Stable Diffusionチェックポイントは `checkpoints/`、LoRAは `loras/`、VAEは `vae/`。コピー後、UIでモデルリストを更新してください。
+        3. ホストの `/dev/dri` にIntel GPUが露出している必要があります(カーネルドライバー i915/xe)。すべてのレンダーデバイスがコンテナに渡されます。
+      ko_KR: |-
+        1. 첫 시작 시 Python 환경을 초기화하고 구성 요소를 다운로드할 수 있습니다 — 웹 UI를 열기 전에 몇 분 기다려 주세요.
+        2. 모델 파일은 `/DATA/AppData/comfyui_intel/models` 아래에 둡니다 — 예: Stable Diffusion 체크포인트는 `checkpoints/`, LoRA는 `loras/`, VAE는 `vae/`. 복사 후 UI에서 모델 목록을 새로고침하세요.
+        3. 호스트의 `/dev/dri`에 Intel GPU가 노출되어 있어야 합니다(커널 i915/xe 드라이버). 모든 렌더 장치가 컨테이너로 전달됩니다.
+      nb_NO: |-
+        1. Første oppstart initialiserer Python-miljøet og kan laste ned komponenter — vent noen minutter før du åpner web-UI.
+        2. Modellfiler legges under `/DATA/AppData/comfyui_intel/models` — f.eks. Stable Diffusion-checkpoints i `checkpoints/`, LoRA-er i `loras/`, VAE-er i `vae/`. Oppdater modellisten i UI etter kopiering.
+        3. Krever en Intel-GPU eksponert på `/dev/dri` på verten (kjernedriver i915/xe). Alle render-enheter sendes til kontaineren.
+      pt_PT: |-
+        1. O primeiro arranque inicializa o ambiente Python e pode transferir componentes — aguarde alguns minutos antes de abrir a interface web.
+        2. Os ficheiros de modelos vão para `/DATA/AppData/comfyui_intel/models` — p. ex. checkpoints Stable Diffusion em `checkpoints/`, LoRAs em `loras/`, VAEs em `vae/`. Depois atualize a lista de modelos na UI.
+        3. Requer uma GPU Intel exposta em `/dev/dri` no host (driver de kernel i915/xe). Todos os dispositivos de renderização são passados ao contentor.
+      ru_RU: |-
+        1. Первый запуск инициализирует окружение Python и может загрузить компоненты — подождите несколько минут, прежде чем открывать веб-интерфейс.
+        2. Файлы моделей кладите в `/DATA/AppData/comfyui_intel/models` — например, чекпоинты Stable Diffusion в `checkpoints/`, LoRA в `loras/`, VAE в `vae/`. После копирования обновите список моделей в интерфейсе.
+        3. Требуется GPU Intel, доступный на хосте через `/dev/dri` (драйвер ядра i915/xe). Все render-устройства пробрасываются в контейнер.
+      sv_SE: |-
+        1. Första starten initierar Python-miljön och kan ladda ner komponenter — vänta några minuter innan du öppnar webbgränssnittet.
+        2. Modellfiler läggs under `/DATA/AppData/comfyui_intel/models` — t.ex. Stable Diffusion-checkpoints i `checkpoints/`, LoRA i `loras/`, VAE i `vae/`. Uppdatera modellistan i UI efter kopiering.
+        3. Kräver en Intel-GPU exponerad på `/dev/dri` på värden (kärndrivrutin i915/xe). Alla renderingsenheter skickas till containern.
+      tr_TR: |-
+        1. İlk başlatma Python ortamını başlatır ve bileşenler indirebilir — web arayüzünü açmadan önce birkaç dakika bekleyin.
+        2. Model dosyaları `/DATA/AppData/comfyui_intel/models` altına konur — örn. Stable Diffusion checkpoint'leri `checkpoints/`, LoRA'lar `loras/`, VAE'ler `vae/` içine. Kopyaladıktan sonra arayüzde model listesini yenileyin.
+        3. Ana makinede `/dev/dri` üzerinden erişilebilen bir Intel GPU gerekir (çekirdek i915/xe sürücüsü). Tüm render aygıtları konteynere aktarılır.
+      zh_CN: |-
+        1. 首次启动会初始化 Python 环境并可能下载组件 —— 打开 Web 界面前请等待几分钟。
+        2. 模型文件放在 `/DATA/AppData/comfyui_intel/models` 下 —— 如 Stable Diffusion 底模放 `checkpoints/`、LoRA 放 `loras/`、VAE 放 `vae/`。复制后在界面里刷新模型列表。
+        3. 需要宿主机在 `/dev/dri` 暴露 Intel GPU(内核 i915/xe 驱动)。所有渲染设备都会透传给容器。
+  category: AI
+  author: NimoTech
+  developer: Comfy Org
+  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ComfyUI_Intel/icon.png
+  screenshot_link:
+  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ComfyUI_Intel/screenshot-1.png
+  main: comfyui_intel
+  port_map: '18188'
+  architectures:
+  - amd64
+  index: /
+  scheme: http
