@@ -20,7 +20,7 @@ services:
       - TZ=$TZ
     extra_hosts:
       - host.docker.internal:host-gateway
-    image: icewhaletech/ragflow:v0.21.1
+    image: ghcr.io/nimotech/ragflow:v0.21.1
     ports:
       - target: 9380
         published: "9380"
@@ -489,7 +489,7 @@ services:
       timeout: 10s
       interval: 10s
       retries: 120
-    image: icewhaletech/ragflow-infinity:v0.6.1
+    image: ghcr.io/nimotech/ragflow-infinity:v0.6.1
     ports:
       - target: 23817
         published: "23817"
@@ -781,7 +781,7 @@ services:
       interval: 10s
       retries: 10
       start_period: 90s
-    image: icewhaletech/ragflow-mysql:8.0.39
+    image: ghcr.io/nimotech/ragflow-mysql:8.0.39
     ports:
       - target: 3306
         published: "5455"
