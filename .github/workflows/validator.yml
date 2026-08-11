@@ -31,29 +31,21 @@ jobs:
       #
       # Building from source removes the dependency on a release that may never
       # exist, and checks manifests against the validator as it is today rather
-      # than as of whenever one was last shipped. AppManagement's go.mod
-      # redirects NimoOS-Common to ../NimoOS-Common and its go:generate reads
-      # ../NimoOS-MessageBus's OpenAPI spec, so all three must be on disk.
+      # than as of whenever one was last shipped.
+      #
+      # One checkout is enough. This used to clone NimoOS-Common and
+      # NimoOS-MessageBus too, because AppManagement's go.mod redirected
+      # NimoOS-Common to ../NimoOS-Common and its go:generate read
+      # ../NimoOS-MessageBus's spec. AppManagement builds standalone now.
+      #
+      # No token either: NimoOS-AppManagement is public, so the default job
+      # token can read it. That is what makes this work on pull requests from
+      # forks, which never receive repository secrets.
       - name: Check out NimoOS-AppManagement
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           repository: NimoTech/NimoOS-AppManagement
           path: NimoOS-AppManagement
-          # Only needed while these repositories are private; the default job
-          # token is enough once they are public.
-          token: ${{ secrets.CI_SIBLING_TOKEN || github.token }}
-      - name: Check out NimoOS-Common
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          repository: NimoTech/NimoOS-Common
-          path: NimoOS-Common
-          token: ${{ secrets.CI_SIBLING_TOKEN || github.token }}
-      - name: Check out NimoOS-MessageBus
-        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
-        with:
-          repository: NimoTech/NimoOS-MessageBus
-          path: NimoOS-MessageBus
-          token: ${{ secrets.CI_SIBLING_TOKEN || github.token }}
 
       - name: Set up Go
         uses: actions/setup-go@40f1582b2485089dde7abd97c1529aa768e1baff
@@ -61,15 +53,13 @@ jobs:
           go-version-file: NimoOS-AppManagement/go.mod
           cache-dependency-path: NimoOS-AppManagement/go.sum
 
-      # codegen/ is gitignored, so cmd/validator does not compile from a fresh
-      # clone until go generate has run.
+      # No go generate step: AppManagement commits its generated code now, so a
+      # fresh clone compiles as-is.
       - name: Build the validator
         working-directory: NimoOS-AppManagement
         env:
           CGO_ENABLED: "0"
-        run: |
-          go generate ./...
-          go build -o "$RUNNER_TEMP/nimoos-app-management-validator" ./cmd/validator
+        run: go build -o "$RUNNER_TEMP/nimoos-app-management-validator" ./cmd/validator
 
       # The loop this replaces piped find into `while read` and never looked at
       # the validator's exit code, so a manifest that failed validation still
