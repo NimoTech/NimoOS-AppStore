@@ -450,11 +450,11 @@ x-casaos:
       - [Wallabag GitHub Deposu](https://github.com/wallabag/wallabag)
       - [Wallabag Belgeleri](https://doc.wallabag.org)
       - [Wallabag Docker İmajı](https://hub.docker.com/r/wallabag/wallabag)
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Wallabag/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Wallabag/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Wallabag/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Wallabag/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Wallabag/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Wallabag/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Wallabag/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Wallabag/screenshot-3.png
   thumbnail: ""
   tips:
     before_install:

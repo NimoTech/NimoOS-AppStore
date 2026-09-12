@@ -2,10 +2,10 @@
     "version": "2.0",
     "title": "Gitea",
     "name": "gitea",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Gitea/icon.png",
     "tagline": "Git with a cup of tea",
     "overview": "Gitea is a community managed lightweight code hosting solution written in Go.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Gitea/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Gitea/thumbnail.png",
     "screenshots": [
     ],
     "category": [

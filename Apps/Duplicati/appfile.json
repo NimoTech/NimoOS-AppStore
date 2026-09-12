@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Duplicati",
 	"name": "duplicati",
-	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/icon.png",
+	"icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/icon.png",
 	"tagline": "Store securely encrypted backups in the cloud!",
 	"overview": "Duplicati is a free, open source, backup client that securely stores encrypted, incremental, compressed backups on cloud storage services and remote file servers.",
-	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/thumbnail.png",
+	"thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/thumbnail.png",
 	"screenshots": [
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-1.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-2.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-3.png"
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/screenshot-1.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/screenshot-2.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/screenshot-3.png"
 	],
 	"category": [
 		"Cloud"

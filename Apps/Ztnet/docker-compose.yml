@@ -624,14 +624,14 @@ x-casaos:
       **Daha fazla bilgi:**
       - [ZTnet Resmi Web Sitesi](https://ztnet.network/)
       - [ZTnet GitHub](https://github.com/sinamics/ztnet)
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/screenshot-1.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/screenshot-2.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/screenshot-3.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/screenshot-4.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/screenshot-5.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Ztnet/screenshot-6.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/screenshot-1.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/screenshot-2.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/screenshot-3.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/screenshot-4.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/screenshot-5.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Ztnet/screenshot-6.jpg
   thumbnail: ""
   tips:
     before_install:

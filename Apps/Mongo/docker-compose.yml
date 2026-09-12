@@ -83,8 +83,8 @@ x-casaos:
   screenshot_link:
   developer: MongoDB Inc.
   author: WisdomSky
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Mongo/icon.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Mongo/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Mongo/icon.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Mongo/icon.png
   category: Developer
   tips:
     before_install:

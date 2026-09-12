@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Emby",
 	"name": "emby",
-	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/icon.png",
+	"icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Emby/icon.png",
 	"tagline": "TAKE YOUR MEDIA ANYWHERE WITH EMBY",
 	"overview": "Bringing all of your home videos, music, and photos together into one place has never been easier. Your personal Emby Server automatically converts and streams your media on-the-fly to play on any device.",
-	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/thumbnail.png",
+	"thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Emby/thumbnail.png",
 	"screenshots": [
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-1.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-2.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-3.png"
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Emby/screenshot-1.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Emby/screenshot-2.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Emby/screenshot-3.png"
 	],
 	"category": [
 		"Media"

@@ -2,7 +2,7 @@
   "version": "2.0",
   "title": "VoceChat",
   "name": "vocechat",
-  "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/VoceChat/icon.png",
+  "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/VoceChat/icon.png",
   "tagline": "Have a Private Social Space Hosted on Your Site",
   "overview": "As a top alternative to centralized chat services, Voce chat is a superlight Rust powered open-core chat app that prioritizes private hosting.",
   "thumbnail": "",

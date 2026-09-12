@@ -2,14 +2,14 @@
     "version": "2.0",
     "title": "Vaultwarden",
     "name": "vaultwarden",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Vaultwarden/icon.png",
     "tagline": "A self-hosted Bitwarden server",
     "overview": "Alternative implementation of the Bitwarden server API written in Rust and compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Vaultwarden/thumbnail.png",
     "screenshots": [
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/screenshot-1.png",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/screenshot-2.png",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Vaultwarden/screenshot-3.png"
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Vaultwarden/screenshot-1.png",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Vaultwarden/screenshot-2.png",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Vaultwarden/screenshot-3.png"
     ],
     "category": [
         "Utilities"

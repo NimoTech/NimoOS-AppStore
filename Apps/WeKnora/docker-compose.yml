@@ -1594,12 +1594,12 @@ x-casaos:
   category: AI
   author: tencent
   developer: Tencent
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WeKnora/icon.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WeKnora/thumbnail.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/WeKnora/icon.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/WeKnora/thumbnail.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WeKnora/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WeKnora/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WeKnora/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/WeKnora/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/WeKnora/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/WeKnora/screenshot-3.png
   main: weknora
   port_map: "1080"
   architectures:

@@ -178,11 +178,11 @@ x-casaos:
 
       PdfDing'i Zima gibi özel bulut cihazlarında dağıtmak, çok cihazlı erişimle benzersiz kolaylık getirir ve PDF koleksiyonunuzun nerede olursanız olun her zaman elinizin altında ve güvenli olmasını sağlar.
   developer: mrmn2
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PdfDing/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/PdfDing/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PdfDing/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PdfDing/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PdfDing/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/PdfDing/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/PdfDing/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/PdfDing/screenshot-3.png
   main: pdfding
   port_map: "8000"
   scheme: http

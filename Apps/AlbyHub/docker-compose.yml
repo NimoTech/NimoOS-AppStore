@@ -16,7 +16,7 @@ services:
         reservations:
           memory: 1024M
     labels:
-      icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/AlbyHub/icon.png
+      icon: https://get.nimotech.ai/nimoos/appstore/Apps/AlbyHub/icon.png
     ports:
       - target: 8080
         published: "58000"
@@ -47,11 +47,11 @@ x-casaos:
       - [Marketing Site](https://albyhub.com/)
       - [Community of users and developers](https://discord.getalby.com)
       - [Feedback Board, feature requests, bug reports[(https://feedback.getalby.com)
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/AlbyHub/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/AlbyHub/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/AlbyHub/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/AlbyHub/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/AlbyHub/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/AlbyHub/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/AlbyHub/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/AlbyHub/screenshot-3.png
   tagline:
     en_us: Self-custodial Bitcoin Lightning wallet with integrated node and app connections.
     zh_cn: 一个简单的比特币闪电节点，带有钱包、子账户和NWC连接。

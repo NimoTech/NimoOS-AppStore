@@ -40,9 +40,9 @@ x-casaos:
     sv_se: Chatbot UI är ett öppen källkod chattgränssnitt för AI-modeller.
     uk_ua: Chatbot UI - це відкритий чат-інтерфейс для моделей ШІ.
   developer: Mckay Wrigley
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ChatbotUI/icon.jpg
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/ChatbotUI/icon.jpg
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ChatbotUI/screenshot-1.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/ChatbotUI/screenshot-1.jpg
   tagline:
     en_us: Open source chat UI for AI models
     zh_cn: 用于AI模型的开源聊天界面

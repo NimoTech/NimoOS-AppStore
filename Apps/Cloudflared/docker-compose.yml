@@ -253,13 +253,13 @@ x-casaos:
     ru_RU: Демон туннелирования от Cloudflare, который безопасно открывает ваши веб-серверы в интернете.
     tr_TR: Cloudflare tarafından sunulan bir tünel servisi olup web sunucularınızı güvenli bir şekilde internete açar.
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Cloudflared/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Cloudflared/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Cloudflared/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Cloudflared/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Cloudflared/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Cloudflared/screenshot-3.png
   developer: Cloudflare Inc.
   author: WisdomSky
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Cloudflared/icon.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Cloudflared/thumbnail.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Cloudflared/icon.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Cloudflared/thumbnail.png
   category: Developer
   title:
     en_us: Cloudflared

@@ -392,9 +392,9 @@ x-casaos:
   category: AI
   author: NimoTech
   developer: Comfy Org
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ComfyUI_Nvidia/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/ComfyUI_Nvidia/icon.png
   screenshot_link:
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ComfyUI_Nvidia/screenshot-1.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/ComfyUI_Nvidia/screenshot-1.png
   main: comfyui_nvidia
   port_map: '28188'
   architectures:

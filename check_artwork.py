@@ -25,7 +25,7 @@ import re
 import struct
 import sys
 
-S3_PREFIX = "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/"
+S3_PREFIX = "https://get.nimotech.ai/nimoos/appstore/"
 
 # Manifests come in three shapes. Matching only docker-compose.yml, as an
 # earlier sweep did, silently skips 53 apps.

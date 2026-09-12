@@ -97,12 +97,12 @@ x-casaos:
     sv_se: Deluge innehåller de vanliga funktionerna hos BitTorrent-klienter, såsom protokollkryptering, DHT, lokalt parupptäckt (LSD), parbyte (PEX), UPnP, NAT-PMP, proxystöd, webblöss, globala och torrentbaserade hastighetsbegränsningar. Eftersom Deluge använder libtorrent-biblioteket intensivt har den en fullständig lista över tillhandahållna funktioner.
     uk_ua: Deluge містить загальні функції клієнтів BitTorrent, такі як шифрування протоколу, DHT, локальне виявлення пірів (LSD), обмін пірами (PEX), UPnP, NAT-PMP, підтримка проксі, веб-сіди, глобальні та обмеження швидкості для кожного торрента. Оскільки Deluge сильно використовує бібліотеку libtorrent, він має повний список наданих функцій.
   developer: Deluge Team
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Deluge/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Deluge/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Deluge/screenshot-1.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Deluge/screenshot-2.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Deluge/screenshot-3.jpg
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Deluge/screenshot-4.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Deluge/screenshot-1.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Deluge/screenshot-2.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Deluge/screenshot-3.jpg
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Deluge/screenshot-4.jpg
   tagline:
     en_us: A lightweight and free BitTorrent client.
     zh_cn: 轻量级且免费的 BitTorrent 客户端。
@@ -117,7 +117,7 @@ x-casaos:
     pt_br: Um cliente BitTorrent leve e gratuito.
     sv_se: En lättviktig och gratis BitTorrent-klient.
     uk_ua: Легкий і безкоштовний клієнт BitTorrent.
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Deluge/thumbnail.jpg
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Deluge/thumbnail.jpg
   tips:
     before_install:
       en_us: |

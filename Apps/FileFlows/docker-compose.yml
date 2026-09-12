@@ -11,7 +11,7 @@ services:
     hostname: fileflows
     image: revenz/fileflows:stable
     labels:
-      icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/FileFlows/icon.png
+      icon: https://get.nimotech.ai/nimoos/appstore/Apps/FileFlows/icon.png
     restart: unless-stopped
     ports: 
       - target: 5000
@@ -50,11 +50,11 @@ x-casaos:
     en_us: FileFlows
   index: /
   developer: FileFlows
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/FileFlows/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/FileFlows/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/FileFlows/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/FileFlows/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/FileFlows/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/FileFlows/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/FileFlows/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/FileFlows/screenshot-3.png
   tagline:
     en_us: File processing made easy!
     zh_cn: 文件处理变得轻松！

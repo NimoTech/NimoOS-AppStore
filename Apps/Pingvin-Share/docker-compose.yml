@@ -357,11 +357,11 @@ x-casaos:
   category: Utilities
   author: stonith404
   developer: stonith404
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pingvin-Share/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Pingvin-Share/icon.png
   screenshot_link: 
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pingvin-Share/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pingvin-Share/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pingvin-Share/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Pingvin-Share/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Pingvin-Share/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Pingvin-Share/screenshot-3.png
   main: pingvin-share
   port_map: "3410"
   architectures:

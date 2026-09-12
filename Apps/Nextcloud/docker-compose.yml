@@ -74,13 +74,13 @@ x-casaos:
     sv_se: Nextcloud ger dig kontroll över dina data. Lagra dina dokument, kalender, kontakter och foton på en server hemma, hos en av våra leverantörer eller i ett datacenter du litar på.
     uk_ua: Nextcloud розташовує ваші дані під вашим контролем. Зберігайте свої документи, календар, контакти та фотографії на сервері вдома, у одного з наших постачальників або у довіреному центрі даних.
   developer: Nextcloud
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-3.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-4.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-5.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-4.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-5.png
   tagline:
     en_us: Content collaboration platform
     zh_cn: 内容协作平台
@@ -95,7 +95,7 @@ x-casaos:
     pt_br: A plataforma de produtividade que mantém você sob controle
     sv_se: Produktivitetsplattformen som håller dig i kontroll
     uk_ua: Платформа продуктивності, яка дозволяє вам залишатися під контролем
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/thumbnail.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/thumbnail.png
   tips: {}
   title:
     en_us: Nextcloud

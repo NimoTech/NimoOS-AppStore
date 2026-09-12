@@ -2,14 +2,14 @@
     "version": "2.0",
     "title": "Nginx Proxy Manager",
     "name": "nginxproxymanager",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NginxProxyManager/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/NginxProxyManager/icon.png",
     "tagline": "Just what the name says",
     "overview": "Managing Nginx proxy hosts with a simple, powerful interface.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NginxProxyManager/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/NginxProxyManager/thumbnail.png",
     "screenshots": [
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NginxProxyManager/screenshot-1.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NginxProxyManager/screenshot-2.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NginxProxyManager/screenshot-3.jpg"
+        "https://get.nimotech.ai/nimoos/appstore/Apps/NginxProxyManager/screenshot-1.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/NginxProxyManager/screenshot-2.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/NginxProxyManager/screenshot-3.jpg"
     ],
     "category": [
         "Network"

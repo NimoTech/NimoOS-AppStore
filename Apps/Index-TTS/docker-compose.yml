@@ -420,12 +420,12 @@ x-casaos:
     - amd64
   index: /
   scheme: http
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Index-TTS/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Index-TTS/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Index-TTS/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Index-TTS/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Index-TTS/screenshot-3.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Index-TTS/thumbnail.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Index-TTS/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Index-TTS/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Index-TTS/screenshot-3.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Index-TTS/thumbnail.png
   tips:
     before_install:
       de_DE: |

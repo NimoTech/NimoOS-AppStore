@@ -2,10 +2,10 @@
     "version": "2.0",
     "title": "Siyuan-Note",
     "name": "Siyuan-Note",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Siyuan-Note/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Siyuan-Note/icon.png",
     "tagline": "A privacy-first, self-hosted, fully open source personal knowledge management software, written in typescript and golang.",
     "overview": "SiYuan is a privacy-first personal knowledge management system, support fine-grained block-level reference and Markdown WYSIWYG.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Siyuan-Note/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Siyuan-Note/thumbnail.png",
     "screenshots": [
     ],
     "category": [
@@ -89,7 +89,7 @@
     },
     "changelog": {
         "latest_updates": "",
-        "url": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Siyuan-Note/changelog.txt"
+        "url": "https://get.nimotech.ai/nimoos/appstore/Apps/Siyuan-Note/changelog.txt"
     },
     "latest_update_date": "2023.09.19"
 }

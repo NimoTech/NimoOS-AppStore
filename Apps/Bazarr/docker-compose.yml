@@ -76,12 +76,12 @@ x-casaos:
     sv_se: Bazarr är ett komplement till Sonarr och Radarr. Det kan hantera och ladda ner undertexter baserat på dina krav. Du definierar dina preferenser för TV-serie eller film och Bazarr tar hand om allt åt dig.
     uk_ua: Bazarr - це додаткова програма до Sonarr і Radarr. Він може керувати і завантажувати субтитри відповідно до ваших вимог. Ви визначаєте свої вподобання за серіалом або фільмом, а Bazarr займається усім за вас.
   developer: Sabnzbd Team
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Bazarr/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-3.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/screenshot-4.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Bazarr/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Bazarr/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Bazarr/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Bazarr/screenshot-4.png
   tagline:
     en_us: Letter generators for Sonarr and Radarr
     zh_cn: Sonarr和Radarr的信件生成器
@@ -96,7 +96,7 @@ x-casaos:
     pt_br: Geradores de cartas para Sonarr e Radarr
     sv_se: Brevgenererare för Sonarr och Radarr
     uk_ua: Генератори листів для Sonarr і Radarr
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Bazarr/thumbnail.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Bazarr/thumbnail.png
   tips: {}
   title:
     en_us: Bazarr

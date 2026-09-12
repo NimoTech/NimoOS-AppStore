@@ -84,12 +84,12 @@ x-casaos:
   category: Gallery
   author: Cp0204
   developer: alextran1502
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Immich/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Immich/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Immich/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Immich/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Immich/screenshot-3.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Immich/thumbnail.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Immich/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Immich/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Immich/screenshot-3.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Immich/thumbnail.png
   description:
     en_US: |
       Immich: Revolutionizing Your Home Media Experience

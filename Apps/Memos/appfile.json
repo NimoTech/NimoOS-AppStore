@@ -2,13 +2,13 @@
 	"version": "0.14.0",
 	"title": "Memos",
 	"name": "Memos",
-	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Memos/icon.png",
+	"icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Memos/icon.png",
 	"tagline": "A lightweight, self-hosted memo hub. Open Source and Free forever.",
 	"overview": "A lightweight, self-hosted memo hub. Open Source and Free forever.",
-	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Memos/thumbnail.png",
+	"thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Memos/thumbnail.png",
 	"screenshots": [
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Memos/screenshot-1.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Memos/screenshot-2.png"
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Memos/screenshot-1.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Memos/screenshot-2.png"
 	],
 	"category": ["Notes"],
 	"developer": {

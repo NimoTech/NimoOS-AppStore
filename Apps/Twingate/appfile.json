@@ -2,10 +2,10 @@
     "version": "1.0",
     "title": "Twingate",
     "name": "twingate-connector",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Twingate/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Twingate/icon.png",
     "tagline": "Twingate Connector for CasaOS",
     "overview": "It's a connector for Twingate",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Twingate/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Twingate/thumbnail.png",
     "screenshots": [
     ],
     "category": [
