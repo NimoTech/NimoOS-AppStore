@@ -2,14 +2,14 @@
   "version": "2.0",
   "title": "Nextcloud",
   "name": "nextcloud",
-  "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/icon.png",
+  "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/icon.png",
   "tagline": "The productivity platform that keeps you in control",
   "overview": "Nextcloud puts your data at your fingertips, under your control. Store your documents, calendar, contacts and photos on a server at home, at one of our providers or in a data center you trust.",
   "thumbnail": "",
   "screenshots": [
-    "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-1.png",
-    "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-2.png",
-    "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Nextcloud/screenshot-3.png"
+    "https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-1.png",
+    "https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-2.png",
+    "https://get.nimotech.ai/nimoos/appstore/Apps/Nextcloud/screenshot-3.png"
   ],
   "category": [
     "Cloud"

@@ -111,13 +111,13 @@ x-casaos:
 
       Göz alıcı tarayıcı tabanlı arayüzü ve güçlü işlevselliği ile Swing Music, yerel müzik koleksiyonlarını yönetmek ve keyfini çıkarmak için güzel ve pratik bir yol arayan müzik tutkunları için mükemmel bir seçimdir.
   developer: SwingMX
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/SwingMusic/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/SwingMusic/icon.png
   screenshot_link:
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/SwingMusic/screenshot-1.png
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/SwingMusic/screenshot-2.png
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/SwingMusic/screenshot-3.png
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/SwingMusic/screenshot-4.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/SwingMusic/thumbnail.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/SwingMusic/screenshot-1.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/SwingMusic/screenshot-2.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/SwingMusic/screenshot-3.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/SwingMusic/screenshot-4.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/SwingMusic/thumbnail.png
   tagline:
     en_US: Swing Music is a beautifully designed, self-hosted music streaming server. Like a cooler Spotify ... but bring your own music.
     en_GB: Swing Music is a beautifully designed, self-hosted music streaming server. Like a cooler Spotify ... but bring your own music.

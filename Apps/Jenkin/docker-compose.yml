@@ -62,4 +62,4 @@ x-casaos:
   title:
     en_us: Jenkins CI/CD
   port_map: "8080"
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Jenkin/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Jenkin/icon.png

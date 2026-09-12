@@ -16,7 +16,7 @@ services:
       - USERNAME=casaos
     image: ugeek/webdav:amd64
     labels:
-      icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WebDav/icon.png
+      icon: https://get.nimotech.ai/nimoos/appstore/Apps/WebDav/icon.png
     ports:
       - target: 80
         published: "5005"
@@ -52,9 +52,9 @@ x-casaos:
     sv_se: WebDAV är ett webbaserat protokoll som låter dig dela och hantera filer över internet, vilket ger en samarbetsmiljö för filredigering och versionskontroll.
     uk_ua: WebDAV - це веб-протокол, який дозволяє вам обмінюватися файлами та керувати ними через Інтернет, забезпечуючи спільне середовище для редагування файлів та контролю версій.
   developer: CasaOS Team
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WebDav/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/WebDav/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/WebDav/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/WebDav/screenshot-1.png
   tagline:
     en_us: A web-based file sharing and management protocol
     zh_cn: 基于 Web 的文件共享和管理协议

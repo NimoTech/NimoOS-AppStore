@@ -2,15 +2,15 @@
     "version": "1.0",
     "title": "OpenHAB",
     "name": "openhab",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHAB/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/OpenHAB/icon.png",
     "tagline": "Empowering the smart home",
     "overview": "The open Home Automation Bus (openHAB, pronounced ˈəʊpənˈhæb) is an open source, technology agnostic home automation platform which runs as the center of your smart home! Its ability to integrate a multitude of other devices and systems. openHAB includes other home automation systems, (smart) devices and other technologies into a single solution. To provide a uniform user interface and a common approach to automation rules across the entire system, regardless of the number of manufacturers and sub-systems involved. Giving you the most flexible tool available to make almost any home automation wish come true; if you can think it, odds are that you can implement it with openHAB.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHAB/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/OpenHAB/thumbnail.png",
     "screenshots": [
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHAB/screenshot-1.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHAB/screenshot-2.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHAB/screenshot-3.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHAB/screenshot-4.jpg"
+        "https://get.nimotech.ai/nimoos/appstore/Apps/OpenHAB/screenshot-1.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/OpenHAB/screenshot-2.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/OpenHAB/screenshot-3.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/OpenHAB/screenshot-4.jpg"
     ],
     "category": [
         "Home Automation"

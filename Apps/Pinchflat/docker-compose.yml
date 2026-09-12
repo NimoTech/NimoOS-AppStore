@@ -401,10 +401,10 @@ x-casaos:
 
       Medya merkezi uygulamasıyla kullanmak için içerik indirmek isteyen kişiler veya medyayı arşivlemek isteyenler için mükemmel!
   developer: kieraneglin
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pinchflat/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Pinchflat/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pinchflat/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Pinchflat/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Pinchflat/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Pinchflat/screenshot-2.png
   main: pinchflat
   port_map: "8945"
   scheme: http

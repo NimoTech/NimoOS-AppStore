@@ -35,10 +35,10 @@ x-casaos:
     en_us: Messenger for the Decentralized Web
     zh_cn: 分布式网络的通讯应用
   developer: balzack
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Databag/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Databag/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Databag/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Databag/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Databag/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Databag/screenshot-2.png
   author: Pierre Balzack
   category: Chat
   title:

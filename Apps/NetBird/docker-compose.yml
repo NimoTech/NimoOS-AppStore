@@ -140,12 +140,12 @@ x-casaos:
       - [セルフホストガイド](https://docs.netbird.io/selfhosted/selfhosted-quickstart)
       - [NetBird GitHub](https://github.com/netbirdio/netbird)
       - [Slack コミュニティ](https://docs.netbird.io/slack-url)
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NetBird/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/NetBird/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NetBird/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NetBird/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NetBird/screenshot-3.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/NetBird/thumbnail.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/NetBird/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/NetBird/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/NetBird/screenshot-3.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/NetBird/thumbnail.png
   scheme: "https"
   hostname: "app.netbird.io"
   port_map: ""

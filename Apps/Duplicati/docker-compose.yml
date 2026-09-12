@@ -75,11 +75,11 @@ x-casaos:
     sv_se: Duplicati är en gratis, öppen källkod, backup-klient som säkert lagrar krypterade, inkrementella, komprimerade säkerhetskopior på molntjänster och fjärrfiler.
     uk_ua: Duplicati - це безкоштовний клієнт резервного копіювання з відкритим вихідним кодом, який безпечно зберігає зашифровані, інкрементні, стиснені резервні копії на хмарних службах зберігання та віддалених файлових серверах.
   developer: duplicati
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/screenshot-3.png
   tagline:
     en_us: Store securely encrypted backups in the cloud!
     zh_cn: 在云端存储安全加密的备份文件！
@@ -94,7 +94,7 @@ x-casaos:
     pt_br: Armazene backups criptografados de forma segura na nuvem!
     sv_se: Lagra säkert krypterade säkerhetskopior i molnet!
     uk_ua: Зберігайте безпечні зашифровані резервні копії у хмарі!
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Duplicati/thumbnail.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Duplicati/thumbnail.png
   tips: {}
   title:
     en_us: Duplicati

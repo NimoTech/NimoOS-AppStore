@@ -79,11 +79,11 @@ x-casaos:
     zh_cn: pyLoad是一款用Python编写的免费开源下载管理器，设计极轻量，易于扩展，并通过Web完全可管理。
     pt_br: pyLoad é um gerenciador de download gratuito e de código aberto escrito em Python e projetado para ser extremamente leve, facilmente extensível e totalmente gerenciável via web.
   developer: linuxserver
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PyLoad/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/PyLoad/icon.png
   screenshot_link:
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PyLoad/screenshot-1.png
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PyLoad/screenshot-2.png
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/PyLoad/screenshot-3.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/PyLoad/screenshot-1.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/PyLoad/screenshot-2.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/PyLoad/screenshot-3.png
   tagline:
     en_us: Free Downloader Manager.
     zh_cn: 免费下载管理器。

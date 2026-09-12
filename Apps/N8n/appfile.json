@@ -2,14 +2,14 @@
 	"version": "1.0",
 	"title": "n8n",
 	"name": "n8n",
-	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/N8n/icon.png",
+	"icon": "https://get.nimotech.ai/nimoos/appstore/Apps/N8n/icon.png",
 	"tagline": "Workflow automation tool",
 	"overview": "Free and source-available fair-code licensed workflow automation tool. Easily automate tasks across different services.",
-	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/N8n/thumbnail.png",
+	"thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/N8n/thumbnail.png",
 	"screenshots": [
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/N8n/screenshot-1.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/N8n/screenshot-2.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/N8n/screenshot-3.png"
+		"https://get.nimotech.ai/nimoos/appstore/Apps/N8n/screenshot-1.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/N8n/screenshot-2.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/N8n/screenshot-3.png"
 	],
 	"category": [
 		"Utilities"

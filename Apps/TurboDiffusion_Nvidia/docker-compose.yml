@@ -932,11 +932,11 @@ x-casaos:
   category: AI
   author: thu-ml
   developer: thu-ml
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/TurboDiffusion_Nvidia/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/TurboDiffusion_Nvidia/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/TurboDiffusion_Nvidia/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/TurboDiffusion_Nvidia/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/TurboDiffusion_Nvidia/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/TurboDiffusion_Nvidia/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/TurboDiffusion_Nvidia/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/TurboDiffusion_Nvidia/screenshot-3.png
   main: turbodiffusion
   port_map: "27860"
   architectures:

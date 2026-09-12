@@ -117,8 +117,8 @@ x-casaos:
     uk_ua: "Сервер MariaDB є одним з найпопулярніших серверів баз даних у світі. Він створений оригінальними розробниками MySQL і гарантується його відкритість."
   developer: MariaDB Foundation
   author: WisdomSky
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/MariaDB/icon.png
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/MariaDB/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/MariaDB/icon.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/MariaDB/icon.png
   tips:
     before_install:
       en_us: |

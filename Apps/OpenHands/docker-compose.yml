@@ -389,11 +389,11 @@ x-casaos:
       - [OpenHands Resmi Web Sitesi](https://www.all-hands.dev)
       - [OpenHands GitHub Deposu](https://github.com/All-Hands-AI/OpenHands)
       - [Belgeler](https://docs.all-hands.dev)
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHands/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/OpenHands/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHands/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHands/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/OpenHands/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/OpenHands/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/OpenHands/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/OpenHands/screenshot-3.png
   thumbnail: ""
   scheme: http
   port_map: "13333"

@@ -2,14 +2,14 @@
 	"version": "2.0",
 	"title": "Node-RED",
 	"name": "node-red",
-	"icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Node-RED/icon.png",
+	"icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Node-RED/icon.png",
 	"tagline": "Low-code programming for event-driven applications",
 	"overview": "Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways.  It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single-click.",
-	"thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Node-RED/thumbnail.png",
+	"thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Node-RED/thumbnail.png",
 	"screenshots": [
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Node-RED/screenshot-1.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Node-RED/screenshot-2.png",
-		"https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Node-RED/screenshot-3.png"
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Node-RED/screenshot-1.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Node-RED/screenshot-2.png",
+		"https://get.nimotech.ai/nimoos/appstore/Apps/Node-RED/screenshot-3.png"
 	],
 	"category": [
 		"Developer"

@@ -2,10 +2,10 @@
     "version": "2.0",
     "title": "Jellyfin",
     "name": "jellyfin",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Jellyfin/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Jellyfin/icon.png",
     "tagline": "Puts you in control of your media.",
     "overview": "Jellyfin enables you to collect, manage, and stream your media. Run the Jellyfin server on your system and gain access to the leading free-software entertainment system, bells and whistles included.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Jellyfin/thumbnail.png",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Jellyfin/thumbnail.png",
     "screenshots": [
     ],
     "category": [
@@ -179,7 +179,7 @@
     "tips": {},
     "changelog":{
         "latest_updates": "",
-        "url": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Jellyfin/changelog.txt"
+        "url": "https://get.nimotech.ai/nimoos/appstore/Apps/Jellyfin/changelog.txt"
     },
     "latest_update_date": "1640243786"
 }

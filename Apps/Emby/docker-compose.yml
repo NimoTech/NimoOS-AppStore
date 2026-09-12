@@ -375,11 +375,11 @@ x-casaos:
       **Daha Fazla Bilgi:**
       - [Emby Resmi Web Sitesi](https://emby.media/)
   developer: linuxserver
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Emby/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Emby/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Emby/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Emby/screenshot-3.png
   tagline:
     en_US: Emby brings together your personal videos, music, photos, and live television.
     en_GB: Emby brings together your personal videos, music, photos, and live television.
@@ -396,7 +396,7 @@ x-casaos:
     pt_PT: O Emby reúne os seus vídeos pessoais, música, fotografias e televisão ao vivo.
     ru_RU: Emby объединяет ваши личные видео, музыку, фотографии и прямое телевидение.
     tr_TR: Emby kişisel videolarınızı, müziğinizi, fotoğraflarınızı ve canlı televizyonu bir araya getirir.
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Emby/thumbnail.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Emby/thumbnail.png
   tips: {}
   title:
     en_US: Emby

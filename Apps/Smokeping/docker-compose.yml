@@ -69,13 +69,13 @@ x-casaos:
     sv_se: håller reda på din nätverkslatens.
     uk_ua: відстежує затримку мережі.
   developer: Lazylibrarian Team
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/screenshot-3.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/screenshot-4.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/screenshot-5.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/screenshot-4.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/screenshot-5.png
   tagline:
     en_us: Free open source network performance monitoring tool
     zh_cn: 免费开源的网络性能监控工具
@@ -90,7 +90,7 @@ x-casaos:
     pt_br: Ferramenta de monitoramento de desempenho de rede de código aberto gratuita
     sv_se: Gratis öppen källkodsnätverksprestandamonteringsverktyg
     uk_ua: Безкоштовний інструмент моніторингу продуктивності мережі з відкритим вихідним кодом
-  thumbnail: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Smokeping/thumbnail.png
+  thumbnail: https://get.nimotech.ai/nimoos/appstore/Apps/Smokeping/thumbnail.png
   tips: {}
   title:
     en_us: Smokeping

@@ -348,9 +348,9 @@ x-casaos:
   category: AI
   author: NimoTech
   developer: Comfy Org
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ComfyUI/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/ComfyUI/icon.png
   screenshot_link:
-  - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/ComfyUI/screenshot-1.png
+  - https://get.nimotech.ai/nimoos/appstore/Apps/ComfyUI/screenshot-1.png
   main: comfyui
   port_map: '8188'
   architectures:

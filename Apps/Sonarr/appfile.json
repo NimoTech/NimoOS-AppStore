@@ -2,15 +2,15 @@
     "version": "2.0",
     "title": "Sonarr",
     "name": "sonarr",
-    "icon": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Sonarr/icon.png",
+    "icon": "https://get.nimotech.ai/nimoos/appstore/Apps/Sonarr/icon.png",
     "tagline": "The PVR for Usenet and BitTorrent users",
     "overview": "Sonarr is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.",
-    "thumbnail": "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Radarr/thumbnail.jpg",
+    "thumbnail": "https://get.nimotech.ai/nimoos/appstore/Apps/Radarr/thumbnail.jpg",
     "screenshots": [
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Sonarr/screenshot-1.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Sonarr/screenshot-2.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Sonarr/screenshot-3.jpg",
-        "https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Sonarr/screenshot-4.jpg"
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Sonarr/screenshot-1.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Sonarr/screenshot-2.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Sonarr/screenshot-3.jpg",
+        "https://get.nimotech.ai/nimoos/appstore/Apps/Sonarr/screenshot-4.jpg"
     ],
     "category": [
         "Media"

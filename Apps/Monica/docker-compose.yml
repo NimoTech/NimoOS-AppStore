@@ -568,11 +568,11 @@ x-casaos:
       **Daha Fazla Bilgi:**
       - [Monica Resmi Web Sitesi](https://www.monicahq.com)
       - [Monica GitHub Deposu](https://github.com/monicahq/monica)
-  icon: https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Monica/icon.png
+  icon: https://get.nimotech.ai/nimoos/appstore/Apps/Monica/icon.png
   screenshot_link:
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Monica/screenshot-1.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Monica/screenshot-2.png
-    - https://nimoos-public.s3.us-east-2.amazonaws.com/nimoos/appstore/Apps/Monica/screenshot-3.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Monica/screenshot-1.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Monica/screenshot-2.png
+    - https://get.nimotech.ai/nimoos/appstore/Apps/Monica/screenshot-3.png
   thumbnail: ""
   scheme: ""
   port_map: "18930"
